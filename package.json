@@ -4,8 +4,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --webpack",
+    "fetch-questions": "node scripts/fetch-questions.mjs",
+    "dev": "node scripts/fetch-questions.mjs && next dev --turbopack",
+    "build": "node scripts/fetch-questions.mjs && next build --webpack",
     "start": "next start",
     "lint": "eslint",
     "format": "prettier --write \"**/*.{ts,tsx}\"",

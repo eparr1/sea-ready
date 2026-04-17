@@ -3,8 +3,8 @@ import { TopicGrid } from '@/components/quiz/TopicGrid'
 import Link from 'next/link'
 import { ChevronLeft } from 'lucide-react'
 
-export default async function TopicsPage() {
-  const questions = await getQuestions()
+export default function TopicsPage() {
+  const questions = getQuestions()
   const subjects = getSubjects(questions)
 
   return (

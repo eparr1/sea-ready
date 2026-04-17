@@ -4,8 +4,8 @@ import { ProgressWidget } from '@/components/home/ProgressWidget'
 import { Greeting } from '@/components/home/Greeting'
 import { ArrowRight, ChartNoAxesColumn } from 'lucide-react'
 
-export default async function HomePage() {
-  const questions = await getQuestions()
+export default function HomePage() {
+  const questions = getQuestions()
   const subjects = getSubjects(questions)
 
   return (

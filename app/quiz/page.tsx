@@ -5,7 +5,7 @@ import { useSearchParams, useRouter } from 'next/navigation'
 import { QuizProvider } from '@/lib/quiz-context'
 import { QuizSession } from '@/components/quiz/QuizSession'
 import { Question } from '@/lib/questions'
-import { ChevronLeft } from 'lucide-react'
+import { ChevronLeft, WifiOff } from 'lucide-react'
 
 function QuizPageInner() {
   const searchParams = useSearchParams()
@@ -14,10 +14,14 @@ function QuizPageInner() {
 
   const [questions, setQuestions] = useState<Question[]>([])
   const [loading, setLoading] = useState(true)
+  const [offline, setOffline] = useState(false)
 
   useEffect(() => {
     fetch('/api/questions')
-      .then(r => r.json())
+      .then(r => {
+        if (!r.ok) throw new Error(`HTTP ${r.status}`)
+        return r.json()
+      })
       .then(data => {
         const allQuestions: Question[] = data.questions
         const isRandom = subject === '__random__'
@@ -32,6 +36,10 @@ function QuizPageInner() {
         }
 
         setQuestions(filtered)
+        setLoading(false)
+      })
+      .catch(() => {
+        setOffline(true)
         setLoading(false)
       })
   }, [subject])
@@ -50,11 +58,33 @@ function QuizPageInner() {
         <h1 className="text-xl font-bold tracking-tight truncate">{displayName}</h1>
       </div>
 
-      {loading ? (
+      {loading && (
         <div className="flex-1 flex items-center justify-center">
           <p className="text-sm text-muted-foreground">Loading questions…</p>
         </div>
-      ) : (
+      )}
+
+      {offline && (
+        <div className="flex-1 flex flex-col items-center justify-center gap-4 text-center px-4">
+          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-muted">
+            <WifiOff className="h-5 w-5 text-muted-foreground" strokeWidth={1.75} />
+          </div>
+          <div>
+            <p className="font-semibold text-foreground">You're offline</p>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Visit the app once with wifi to cache the questions, then it works offline.
+            </p>
+          </div>
+          <button
+            onClick={() => router.push('/')}
+            className="mt-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90"
+          >
+            Back to home
+          </button>
+        </div>
+      )}
+
+      {!loading && !offline && (
         <QuizProvider>
           <QuizSession questions={questions} subject={displayName} />
         </QuizProvider>

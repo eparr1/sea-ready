@@ -1,5 +1,5 @@
 import type { PrecacheEntry, SerwistGlobalConfig } from 'serwist'
-import { Serwist } from 'serwist'
+import { Serwist, NetworkFirst } from 'serwist'
 import { defaultCache } from '@serwist/next/worker'
 
 declare global {
@@ -15,7 +15,17 @@ const serwist = new Serwist({
   skipWaiting: true,
   clientsClaim: true,
   navigationPreload: true,
-  runtimeCaching: defaultCache,
+  runtimeCaching: [
+    {
+      // Cache the questions API with NetworkFirst — serves from cache when offline
+      matcher: ({ url }) => url.pathname === '/api/questions',
+      handler: new NetworkFirst({
+        cacheName: 'api-questions',
+        networkTimeoutSeconds: 5,
+      }),
+    },
+    ...defaultCache,
+  ],
 })
 
 serwist.addEventListeners()

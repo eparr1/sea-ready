@@ -1,0 +1,154 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "subject": "Marine Operations",
+      "question": "A tanker is 40 nm from land, proceeding en route, ODME operational, and discharge limits are within requirements.  Is discharge permitted?",
+      "options": [
+        "Yes",
+        "Yes, under 15 ppm",
+        "No",
+        "Yes, if recorded"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 2,
+      "subject": "Marine Operations",
+      "question": "A tanker is outside a special area, more than 50 nm from land, proceeding en route, ODME operational, discharge rate within limits and total quantity within limits. Is discharge permitted?",
+      "options": [
+        "No",
+        "Yes",
+        "Yes, only if under 15 ppm",
+        "Yes, only with Master approval"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 3,
+      "subject": "Marine Operations",
+      "question": "A ship discharges machinery space bilge water through an OWS. The oil content is 20 ppm. Is this permitted?",
+      "options": [
+        "Yes, outside special area",
+        "Yes, if diluted",
+        "No, exceeds limit",
+        "Yes, if recorded"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 4,
+      "subject": "Marine Operations",
+      "question": "A tanker is more than 50 nm from land and meets all discharge limits, but is not proceeding en route. Is discharge permitted?",
+      "options": [
+        "Yes",
+        "Yes, if ODME operating",
+        "No, vessel must be en route",
+        "Yes, if recorded"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 5,
+      "subject": "Marine Operations",
+      "question": "A tanker transfers oily mixture from cargo pump room bilges to a slop tank. The vessel is not in a special area, is more than 50 nm from land, proceeding en route, ODME operational, and discharge rate and quantity are within limits. Is discharge permitted?",
+      "options": [
+        "No, never permitted",
+        "Yes, discharge is permitted under these conditions",
+        "Yes, if under 15 ppm",
+        "No, unless in port"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 6,
+      "subject": "Marine Operations",
+      "question": "A ship is in a Special Area, proceeding en route, and discharges machinery space bilge water through approved OWS at 15 ppm. Is this permitted?",
+      "options": [
+        "Yes",
+        "No",
+        "Yes, if more than 50 nm from land",
+        "Yes, tankers only"
+      ],
+      "correctIndex": 0,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 7,
+      "subject": "Marine Operations",
+      "question": "A tanker is discharging oily water from slop tanks and the ODME fails during discharge. What is required?",
+      "options": [
+        "Continue discharge",
+        "Reduce rate",
+        "Stop discharge immediately",
+        "Record and continue"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 8,
+      "subject": "Marine Operations",
+      "question": "After completing a discharge of machinery space bilge water, the entry in the Oil Record Book is not signed by the officer in charge or the Master. Is this compliant?",
+      "options": [
+        "Yes, if signed later",
+        "No, not compliant",
+        "Only Master signature required",
+        "Only Chief Engineers signature is required"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 9,
+      "subject": "Marine Operations",
+      "question": "A ship discharges oil or oily mixture in Antarctic waters. Is this permitted?",
+      "options": [
+        "Yes, under 15 ppm",
+        "Yes, if en route",
+        "No, prohibited",
+        "Yes, with approval"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 10,
+      "subject": "Marine Operations",
+      "question": "A tanker is 40 nm from land, proceeding en route, ODME operational, and discharge limits are within requirements. Is discharge permitted?",
+      "options": [
+        "Yes",
+        "Yes, under 15 ppm",
+        "No",
+        "Yes, if recorded"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    }
+  ]
+}
