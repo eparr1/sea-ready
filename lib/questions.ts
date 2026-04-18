@@ -4,6 +4,7 @@ import { join } from 'path'
 export type Question = {
   id: number
   subject: string
+  topic: string
   question: string
   options: string[]
   correctIndex: number
@@ -30,6 +31,17 @@ export function getSubjects(questions: Question[]) {
     const existing = map.get(q.subject)
     if (existing) existing.count++
     else map.set(q.subject, { name: q.subject, count: 1 })
+  }
+  return Array.from(map.values())
+}
+
+export function getTopics(questions: Question[], subject: string) {
+  const map = new Map<string, { name: string; count: number }>()
+  for (const q of questions.filter(q => q.subject === subject)) {
+    const topic = q.topic || 'General'
+    const existing = map.get(topic)
+    if (existing) existing.count++
+    else map.set(topic, { name: topic, count: 1 })
   }
   return Array.from(map.values())
 }

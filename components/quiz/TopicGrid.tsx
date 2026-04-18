@@ -15,7 +15,11 @@ export function TopicGrid({ subjects }: { subjects: Subject[] }) {
   }
 
   function handleSelect(subjectName: string) {
-    router.push(`/quiz?subject=${encodeURIComponent(subjectName)}`)
+    if (subjectName === '__random__') {
+      router.push('/quiz?subject=__random__')
+    } else {
+      router.push(`/subjects/${encodeURIComponent(subjectName)}`)
+    }
   }
 
   return (

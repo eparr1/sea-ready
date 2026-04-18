@@ -3,6 +3,7 @@
     {
       "id": 1,
       "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX 1",
       "question": "A tanker is 40 nm from land, proceeding en route, ODME operational, and discharge limits are within requirements.  Is discharge permitted?",
       "options": [
         "Yes",
@@ -18,6 +19,7 @@
     {
       "id": 2,
       "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX 1",
       "question": "A tanker is outside a special area, more than 50 nm from land, proceeding en route, ODME operational, discharge rate within limits and total quantity within limits. Is discharge permitted?",
       "options": [
         "No",
@@ -33,6 +35,7 @@
     {
       "id": 3,
       "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX 1",
       "question": "A ship discharges machinery space bilge water through an OWS. The oil content is 20 ppm. Is this permitted?",
       "options": [
         "Yes, outside special area",
@@ -48,6 +51,7 @@
     {
       "id": 4,
       "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX 1",
       "question": "A tanker is more than 50 nm from land and meets all discharge limits, but is not proceeding en route. Is discharge permitted?",
       "options": [
         "Yes",
@@ -63,6 +67,7 @@
     {
       "id": 5,
       "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX 1",
       "question": "A tanker transfers oily mixture from cargo pump room bilges to a slop tank. The vessel is not in a special area, is more than 50 nm from land, proceeding en route, ODME operational, and discharge rate and quantity are within limits. Is discharge permitted?",
       "options": [
         "No, never permitted",
@@ -78,6 +83,7 @@
     {
       "id": 6,
       "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX 1",
       "question": "A ship is in a Special Area, proceeding en route, and discharges machinery space bilge water through approved OWS at 15 ppm. Is this permitted?",
       "options": [
         "Yes",
@@ -93,6 +99,7 @@
     {
       "id": 7,
       "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX 1",
       "question": "A tanker is discharging oily water from slop tanks and the ODME fails during discharge. What is required?",
       "options": [
         "Continue discharge",
@@ -108,6 +115,7 @@
     {
       "id": 8,
       "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX 1",
       "question": "After completing a discharge of machinery space bilge water, the entry in the Oil Record Book is not signed by the officer in charge or the Master. Is this compliant?",
       "options": [
         "Yes, if signed later",
@@ -123,6 +131,7 @@
     {
       "id": 9,
       "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX 1",
       "question": "A ship discharges oil or oily mixture in Antarctic waters. Is this permitted?",
       "options": [
         "Yes, under 15 ppm",
@@ -138,6 +147,7 @@
     {
       "id": 10,
       "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX 1",
       "question": "A tanker is 40 nm from land, proceeding en route, ODME operational, and discharge limits are within requirements. Is discharge permitted?",
       "options": [
         "Yes",
@@ -146,6 +156,1574 @@
         "Yes, if recorded"
       ],
       "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 11,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX II",
+      "question": "A ship has carried a Category X substance. What must be done with tank washings?",
+      "options": [
+        "Sea discharge",
+        "Dilute",
+        "Prewash to reception",
+        "Underwater outlet"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 12,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX II",
+      "question": "A ship meets all discharge conditions including 7 knots, more than 12 nautical miles from land, and 25 m water depth. Is discharge permitted?",
+      "options": [
+        "Yes",
+        "No",
+        "Only ppm limits apply",
+        "Only in port"
+      ],
+      "correctIndex": 0,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 13,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX II",
+      "question": "A ship is proceeding at 6 knots and is not being towed. Is discharge permitted?",
+      "options": [
+        "Yes",
+        "No",
+        "Yes if en route",
+        "Yes if depth condition met"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 14,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX II",
+      "question": "A ship is 10 nautical miles from land. Is discharge permitted?",
+      "options": [
+        "Yes",
+        "No",
+        "Yes if depth condition met",
+        "Yes if speed condition met"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 15,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX II",
+      "question": "A ship carrying Category Y substance is operating in the Baltic Sea. Is discharge permitted?",
+      "options": [
+        "Yes",
+        "Yes if 7 knots",
+        "No",
+        "Yes if monitored"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 16,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX II",
+      "question": "A ship carrying Category Z substance in the Black Sea meets all discharge conditions. Is discharge permitted?",
+      "options": [
+        "Yes",
+        "No",
+        "Only to shore reception",
+        "Prewash required"
+      ],
+      "correctIndex": 0,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 17,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX II",
+      "question": "A ship is in the Antarctic area carrying any noxious liquid substance (NLS). Is discharge permitted?",
+      "options": [
+        "Yes",
+        "Yes if 12 nm from land",
+        "No",
+        "Yes if recorded"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 18,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX II",
+      "question": "A ship is discharging Category Y substances. Is monitoring equipment required?",
+      "options": [
+        "Yes",
+        "No",
+        "Only for new ships",
+        "Only for Category X and Y"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 19,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX II",
+      "question": "Where must a discharge of Category Z substances be recorded?",
+      "options": [
+        "Oil Record Book",
+        "Garbage Record Book",
+        "Cargo Record Book",
+        "Deck logbook"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 20,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX II",
+      "question": "A ship is carrying a Category OS substance outside a special area. Which statement is correct?",
+      "options": [
+        "Discharge is prohibited",
+        "Discharge is permitted without Annex II discharge criteria",
+        "Discharge only allowed if under 15 ppm",
+        "Discharge only allowed after prewash"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 21,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX V",
+      "question": "A vessel is en route, outside a special area, and 50 nautical miles from land. Can plastic waste be discharged?",
+      "options": [
+        "Only if recorded",
+        "No",
+        "Yes",
+        "Only if treated"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 22,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX V",
+      "question": "A vessel is en route, outside a special area, and 15 nautical miles from land. Can food waste that is NOT comminuted be discharged?",
+      "options": [
+        "Only if recorded",
+        "Yes",
+        "Only if comminuted",
+        "No"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 23,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX V",
+      "question": "A vessel is en route, outside a special area, and 4 nautical miles from land. Can comminuted food waste be discharged?",
+      "options": [
+        "No",
+        "Yes",
+        "Only if recorded",
+        "Only in port"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 24,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX V",
+      "question": "A vessel is en route, in a special area, and 8 nautical miles from land. Can comminuted food waste be discharged?",
+      "options": [
+        "Yes",
+        "Only with approval",
+        "No",
+        "Only if recorded"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 25,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX V",
+      "question": "A vessel is en route, outside a special area, and 15 nautical miles from land. Can non-HME cargo residues be discharged?",
+      "options": [
+        "Only if recorded",
+        "Only if treated",
+        "Yes",
+        "No"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 26,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX V",
+      "question": "A vessel is en route, outside a special area, and 15 nautical miles from land. Can HME cargo residues be discharged?",
+      "options": [
+        "Only if diluted",
+        "Yes",
+        "No",
+        "Only if recorded"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 27,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX V",
+      "question": "A vessel is en route in a special area, 15 nautical miles from land, carrying non-HME cargo residues. Loading and discharge ports are in the same special area and no adequate reception facilities are available. Can the vessel discharge the cargo residues to sea?",
+      "options": [
+        "No",
+        "Only if recorded",
+        "Only if comminuted",
+        "Yes"
+      ],
+      "correctIndex": 3,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 28,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX V",
+      "question": "A vessel has mixed garbage containing plastic and food waste. Can it be discharged?",
+      "options": [
+        "Only if separated later",
+        "No",
+        "Only if recorded",
+        "Yes"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 29,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX V",
+      "question": "A vessel discharges garbage at sea. Where must this be recorded?",
+      "options": [
+        "Deck logbook",
+        "Oil Record Book",
+        "Cargo Record Book",
+        "Garbage Record Book"
+      ],
+      "correctIndex": 3,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 30,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX V",
+      "question": "A vessel is in a special area. Which type of garbage is ALWAYS prohibited?",
+      "options": [
+        "Food waste",
+        "Paper",
+        "Plastics",
+        "Cargo residues"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 31,
+      "subject": "Marine Operations",
+      "topic": "ISM CODE",
+      "question": "Which of the following best reflects one of the primary objectives of the ISM Code?",
+      "options": [
+        "Improve commercial performance of vessels",
+        "Ensure safety at sea and prevent pollution",
+        "Standardise crew employment contracts",
+        "Replace classification society rules"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 32,
+      "subject": "Marine Operations",
+      "topic": "ISM CODE",
+      "question": "A Safety Management System (SMS) must clearly define:",
+      "options": [
+        "Crew salary scales",
+        "Lines of authority and communication",
+        "Ship construction standards",
+        "Port state inspection procedures"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 33,
+      "subject": "Marine Operations",
+      "topic": "ISM CODE",
+      "question": "An “Observation” during an ISM audit indicates:",
+      "options": [
+        "A serious breach requiring detention",
+        "A failure to comply with a mandatory requirement",
+        "A situation that may develop into a non-conformity if not corrected",
+        "Immediate suspension of the Safety Management Certificate"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 34,
+      "subject": "Marine Operations",
+      "topic": "ISM CODE",
+      "question": "A failure to conduct required emergency drills in accordance with the SMS would normally be classified as:",
+      "options": [
+        "An Observation",
+        "A Non-Conformity",
+        "A Major Non-Conformity automatically",
+        "A commercial deficiency"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 35,
+      "subject": "Marine Operations",
+      "topic": "ISM CODE",
+      "question": "Operating a ship without valid statutory certificates would most likely be classified as:",
+      "options": [
+        "An Observation",
+        "A Non-Conformity",
+        "A Major Non-Conformity",
+        "A minor administrative error"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 36,
+      "subject": "Marine Operations",
+      "topic": "ISM CODE",
+      "question": "The purpose of reporting accidents and non-conformities under the ISM Code is primarily to:",
+      "options": [
+        "Allocate blame to responsible crew",
+        "Protect the company from liability",
+        "Identify root causes and prevent recurrence",
+        "Satisfy port state control only"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 37,
+      "subject": "Marine Operations",
+      "topic": "ISM CODE",
+      "question": "If a critical safety system fails and poses an immediate threat to crew safety, this situation indicates:",
+      "options": [
+        "A routine maintenance issue only",
+        "An Observation",
+        "Ineffective implementation of the SMS",
+        "A documentation error"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 38,
+      "subject": "Marine Operations",
+      "topic": "ISM CODE",
+      "question": "The Safety Management System should include procedures to:",
+      "options": [
+        "Negotiate charter rates",
+        "Prepare for and respond to emergencies",
+        "Conduct ship design modifications",
+        "Control port tariffs"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 39,
+      "subject": "Marine Operations",
+      "topic": "ISM CODE",
+      "question": "Under the ISM Code, defined levels of authority are important to ensure:",
+      "options": [
+        "Crew promotion opportunities",
+        "Clear responsibility for safety-related decisions",
+        "Reduced workload for the Master",
+        "Commercial efficiency"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 40,
+      "subject": "Marine Operations",
+      "topic": "ISM CODE",
+      "question": "If repeated similar non-conformities are identified during audits, this most strongly suggests:",
+      "options": [
+        "Normal operational variation",
+        "Ineffective and systematic failure of the SMS",
+        "Overly strict auditing",
+        "Excessive reporting requirements"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 41,
+      "subject": "Marine Operations",
+      "topic": "OOW CORE",
+      "question": "What does ISPS Security Level 1 indicate?",
+      "options": [
+        "No security measures required",
+        "Minimum appropriate protective security measures maintained at all times",
+        "Emergency security measures only",
+        "Security measures only in port"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 42,
+      "subject": "Marine Operations",
+      "topic": "OOW CORE",
+      "question": "What does ISPS Security Level 2 indicate?",
+      "options": [
+        "Normal operating conditions",
+        "Additional protective measures due to heightened risk",
+        "No security threat present",
+        "Security measures suspended"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 43,
+      "subject": "Marine Operations",
+      "topic": "OOW CORE",
+      "question": "What does ISPS Security Level 3 indicate?",
+      "options": [
+        "Routine security level",
+        "Security measures reduced",
+        "Further specific measures when a security incident is probable or imminent",
+        "No access to port facilities"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 44,
+      "subject": "Marine Operations",
+      "topic": "OOW CORE",
+      "question": "What is a hazard?",
+      "options": [
+        "An event that has already caused harm",
+        "Anything with the potential to cause harm",
+        "A minor unsafe act",
+        "A recorded accident"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 45,
+      "subject": "Marine Operations",
+      "topic": "OOW CORE",
+      "question": "What is risk?",
+      "options": [
+        "The severity of harm only",
+        "The likelihood of harm only",
+        "The likelihood of harm combined with severity",
+        "The number of accidents onboard"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 46,
+      "subject": "Marine Operations",
+      "topic": "OOW CORE",
+      "question": "What is a risk assessment?",
+      "options": [
+        "A checklist for inspections",
+        "A report of accidents",
+        "A systematic process of identifying hazards, evaluating risks, and implementing controls",
+        "A maintenance procedure"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 47,
+      "subject": "Marine Operations",
+      "topic": "OOW CORE",
+      "question": "Which of the following represents the correct sequence in a risk assessment?",
+      "options": [
+        "Record findings, identify hazards, review risks",
+        "Identify hazards, decide who may be harmed, evaluate risks, record findings, review and update",
+        "Evaluate risks, identify hazards, record findings, review",
+        "Decide who may be harmed, record findings, identify hazards"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 48,
+      "subject": "Marine Operations",
+      "topic": "OOW CORE",
+      "question": "What is a Permit to Work?",
+      "options": [
+        "A verbal instruction for tasks",
+        "A routine maintenance checklist",
+        "A formal written document controlling hazardous work and confirming safety precautions",
+        "A logbook entry"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 49,
+      "subject": "Marine Operations",
+      "topic": "OOW CORE",
+      "question": "Who is considered a competent person under a Permit to Work system?",
+      "options": [
+        "Any crew member onboard",
+        "A person with sufficient training, experience, or knowledge authorised under the SMS",
+        "The most senior officer",
+        "The Master only"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 50,
+      "subject": "Marine Operations",
+      "topic": "OOW CORE",
+      "question": "Who is the authorised officer under a Permit to Work system?",
+      "options": [
+        "Chief Engineer",
+        "The Master only",
+        "A person appointed by the Master to issue, control, and close permits",
+        "Any officer on watch"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 51,
+      "subject": "Marine Operations",
+      "topic": "OOW CORE",
+      "question": "What is an ISM observation?",
+      "options": [
+        "A serious safety violation",
+        "A statement of fact made during an audit supported by objective evidence",
+        "A detention notice",
+        "A type of accident report"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 52,
+      "subject": "Marine Operations",
+      "topic": "OOW CORE",
+      "question": "What is a non-conformity under the ISM Code?",
+      "options": [
+        "A minor observation",
+        "A suggestion for improvement",
+        "Non-fulfilment of a specified requirement",
+        "A maintenance delay"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 53,
+      "subject": "Marine Operations",
+      "topic": "OOW CORE",
+      "question": "What is a major non-conformity under the ISM Code?",
+      "options": [
+        "A documentation error",
+        "A routine observation",
+        "A serious deviation posing immediate risk to safety or environment",
+        "A minor procedural issue"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 54,
+      "subject": "Marine Operations",
+      "topic": "OOW CORE",
+      "question": "What is meant by working at height?",
+      "options": [
+        "Working above deck level only",
+        "Working on ladders only",
+        "Any work where a person could fall a distance liable to cause injury",
+        "Working on cargo operations"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 55,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX I",
+      "question": "Which MARPOL Annex requires the carriage and use of an Oil Record Book?",
+      "options": [
+        "Annex II",
+        "Annex I",
+        "Annex V",
+        "Annex VI"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 56,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX I",
+      "question": "Which ships are required to carry both Part I and Part II of the Oil Record Book?",
+      "options": [
+        "All ships above 400 GT",
+        "Oil tankers of 150 GT and above",
+        "All passenger ships",
+        "Ships below 150 GT"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 57,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX I",
+      "question": "What does Oil Record Book Part I cover?",
+      "options": [
+        "Cargo operations only",
+        "Machinery space operations",
+        "Garbage handling",
+        "Ballast water management"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 58,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX I",
+      "question": "What does Oil Record Book Part II cover?",
+      "options": [
+        "Machinery space operations",
+        "Cargo and ballast operations on oil tankers only",
+        "Garbage disposal only",
+        "Fuel oil transfer procedures"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 59,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX I",
+      "question": "Which of the following operations is recorded in Oil Record Book Part I?",
+      "options": [
+        "Loading of oil cargo",
+        "Crude oil washing",
+        "Bunkering of fuel oil",
+        "Discharge of cargo ballast"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 60,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX I",
+      "question": "Which of the following operations must be recorded in Oil Record Book Part I?",
+      "options": [
+        "Discharge of bilge water from machinery spaces",
+        "Loading of oil cargo",
+        "Cleaning of cargo tanks",
+        "Ballasting of cargo tanks"
+      ],
+      "correctIndex": 0,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 61,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX I",
+      "question": "Which ships are required to complete Oil Record Book Part II?",
+      "options": [
+        "All ships above 400 GT",
+        "Oil tankers of 150 GT and above only",
+        "All cargo ships",
+        "Passenger ships only"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 62,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX I",
+      "question": "Which type of operations are recorded in Oil Record Book Part II?",
+      "options": [
+        "Machinery space operations",
+        "Cargo and ballast operations associated with oil cargo",
+        "Food waste disposal",
+        "Ballast water exchange procedures"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 63,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX I",
+      "question": "Which of the following is recorded in Oil Record Book Part II?",
+      "options": [
+        "Discharge of water from slop tanks",
+        "Bunkering of lubricating oil",
+        "Discharge of engine room bilges",
+        "Collection of sludge"
+      ],
+      "correctIndex": 0,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 64,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX I",
+      "question": "Which operation is specifically recorded in Oil Record Book Part II?",
+      "options": [
+        "Crude oil washing",
+        "Bilge discharge from machinery spaces",
+        "Fuel oil transfer to settling tank",
+        "Sludge disposal"
+      ],
+      "correctIndex": 0,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 65,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX I",
+      "question": "How are cargo pumproom bilges classified under MARPOL Annex I?",
+      "options": [
+        "As machinery space bilges",
+        "As clean ballast water",
+        "As cargo-related residues",
+        "As treated discharge"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 66,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX I",
+      "question": "Can oily mixtures from cargo pumproom bilges be discharged under the 15 ppm machinery space provisions?",
+      "options": [
+        "Yes if filtered",
+        "Yes if recorded",
+        "No",
+        "Only in port"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 67,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX I",
+      "question": "Who signs entries in the Oil Record Book?",
+      "options": [
+        "The Master only",
+        "Chief Engineer only",
+        "The officer in charge, with each page countersigned by the Master",
+        "Any crew member"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 68,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX I",
+      "question": "For how long must the Oil Record Book be retained onboard?",
+      "options": [
+        "One year",
+        "Two years",
+        "Three years",
+        "Five years"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 69,
+      "subject": "Marine Operations",
+      "topic": "MARPOL ANNEX I",
+      "question": "Which of the following is an example of an operation recorded in Oil Record Book Part II?",
+      "options": [
+        "Internal transfer of oil cargo during voyage",
+        "Fuel oil bunkering",
+        "Bilge discharge from engine room",
+        "Collection of sludge"
+      ],
+      "correctIndex": 0,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 70,
+      "subject": "Marine Operations",
+      "topic": "ISM CODE",
+      "question": "Which of the following best describes the objectives of the ISM Code?",
+      "options": [
+        "Improve ship profitability only",
+        "Ensure safety at sea, prevent injury or loss of life, and protect the environment",
+        "Standardise ship design globally",
+        "Replace flag State regulations"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 71,
+      "subject": "Marine Operations",
+      "topic": "ISM CODE",
+      "question": "Which of the following is included in the functional requirements of a Safety Management System (SMS)?",
+      "options": [
+        "Crew salary structure",
+        "Safety and environmental protection policy",
+        "Port tariff procedures",
+        "Cargo pricing strategy"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 72,
+      "subject": "Marine Operations",
+      "topic": "ISM CODE",
+      "question": "Which of the following is a required element of an SMS under the ISM Code?",
+      "options": [
+        "Procedures for reporting accidents and non-conformities",
+        "Procedures for ship construction standards",
+        "Procedures for charter agreements",
+        "Procedures for customs clearance"
+      ],
+      "correctIndex": 0,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 73,
+      "subject": "Marine Operations",
+      "topic": "ISM CODE",
+      "question": "Why are defined levels of authority and lines of communication required in an SMS?",
+      "options": [
+        "To improve commercial efficiency",
+        "To reduce paperwork",
+        "To ensure clear responsibility between shore and shipboard personnel",
+        "To avoid audits"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 74,
+      "subject": "Marine Operations",
+      "topic": "ISM CODE",
+      "question": "Which of the following must be included in an SMS?",
+      "options": [
+        "Procedures to prepare for and respond to emergency situations",
+        "Procedures for cargo pricing",
+        "Procedures for port negotiations",
+        "Procedures for crew leave"
+      ],
+      "correctIndex": 0,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 75,
+      "subject": "Marine Operations",
+      "topic": "ISM CODE",
+      "question": "Which of the following is a requirement of an SMS under the ISM Code?",
+      "options": [
+        "Procedures for internal audits and management reviews",
+        "Procedures for vessel sale and purchase",
+        "Procedures for shipbuilding design",
+        "Procedures for fuel pricing"
+      ],
+      "correctIndex": 0,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 76,
+      "subject": "Marine Operations",
+      "topic": "ISM CODE",
+      "question": "What is an ISM observation?",
+      "options": [
+        "A serious safety violation",
+        "A statement of fact made during an audit that may become a non-conformity if not corrected",
+        "A detention notice issued by port state",
+        "A completed corrective action"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 77,
+      "subject": "Marine Operations",
+      "topic": "ISM CODE",
+      "question": "What is an ISM non-conformity?",
+      "options": [
+        "A suggestion for improvement",
+        "A failure to meet a specific ISM Code or SMS requirement",
+        "A routine observation",
+        "A maintenance delay"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 78,
+      "subject": "Marine Operations",
+      "topic": "ISM CODE",
+      "question": "What is a major non-conformity under the ISM Code?",
+      "options": [
+        "A minor documentation error",
+        "A routine audit finding",
+        "A serious risk or systemic failure requiring immediate corrective action",
+        "A delayed report submission"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 79,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – CARGO LOADING",
+      "question": "What is the primary purpose of a cargo loading plan on an oil tanker?",
+      "options": [
+        "To record crew duties",
+        "To ensure safe and efficient loading of cargo",
+        "To calculate fuel consumption",
+        "To manage crew shifts"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 80,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – CARGO LOADING",
+      "question": "Which of the following is included in a cargo loading plan?",
+      "options": [
+        "Crew salary details",
+        "Cargo grade and full description",
+        "Port customs tariffs",
+        "Navigation routes"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 81,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – CARGO LOADING",
+      "question": "What information is required regarding cargo quantities in a loading plan?",
+      "options": [
+        "Only total cargo quantity",
+        "Total quantity and per parcel breakdown",
+        "Only tank capacity",
+        "Only cargo density"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 82,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – CARGO LOADING",
+      "question": "Why is cargo temperature included in a loading plan?",
+      "options": [
+        "For crew comfort",
+        "To ensure safe handling and cargo integrity",
+        "To reduce fuel usage",
+        "For port authority records"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 83,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – CARGO LOADING",
+      "question": "What is the purpose of a cargo segregation plan?",
+      "options": [
+        "To separate crew duties",
+        "To allocate cargo grades to specific tanks",
+        "To manage ballast water",
+        "To control navigation"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 84,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – CARGO LOADING",
+      "question": "What is meant by topping-off rate during loading?",
+      "options": [
+        "Maximum loading speed at start",
+        "Final reduced loading rate to prevent overflow",
+        "Discharge rate during unloading",
+        "Ballast pumping rate"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 85,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – CARGO LOADING",
+      "question": "Why is stability assessed during loading?",
+      "options": [
+        "To improve cargo quality",
+        "To ensure vessel remains safe throughout loading",
+        "To meet port requirements only",
+        "To reduce loading time"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 86,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – CARGO LOADING",
+      "question": "Which structural factor must be considered in a loading plan?",
+      "options": [
+        "Crew accommodation",
+        "Hogging and sagging limits",
+        "Bridge visibility",
+        "Fuel consumption"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 87,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – CARGO LOADING",
+      "question": "What is included in pipeline and valve line-up planning?",
+      "options": [
+        "Crew assignments",
+        "Cargo system configuration for safe transfer",
+        "Port documentation",
+        "Meteorological data"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 88,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – CARGO LOADING",
+      "question": "Where must oil cargo loading operations be recorded?",
+      "options": [
+        "Deck logbook",
+        "Garbage Record Book",
+        "Oil Record Book Part II",
+        "Cargo manifest"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 89,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – ISGOTT CHECKS",
+      "question": "What is the purpose of the ship/shore safety checklist?",
+      "options": [
+        "To monitor crew hours",
+        "To ensure safe cargo transfer operations",
+        "To calculate cargo quantity",
+        "To record fuel use"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 90,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – ISGOTT CHECKS",
+      "question": "Which of the following is checked before discharge operations?",
+      "options": [
+        "Navigation lights",
+        "Crew uniforms",
+        "Fendering effectiveness",
+        "Engine RPM"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 91,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – ISGOTT CHECKS",
+      "question": "Why must scuppers be plugged before cargo operations?",
+      "options": [
+        "To prevent water ingress",
+        "To prevent oil pollution",
+        "To improve stability",
+        "To assist ballast operations"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 92,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – ISGOTT CHECKS",
+      "question": "Why are sea suctions and overboards secured during cargo operations?",
+      "options": [
+        "To prevent flooding",
+        "To prevent accidental discharge of oil",
+        "To reduce fuel consumption",
+        "To improve stability"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 93,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – ISGOTT CHECKS",
+      "question": "What is the purpose of maintaining accommodation at positive pressure?",
+      "options": [
+        "To improve ventilation",
+        "To prevent ingress of flammable vapours",
+        "To reduce noise",
+        "To improve comfort"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 94,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – ISGOTT CHECKS",
+      "question": "Why must ship/shore communications be tested before transfer?",
+      "options": [
+        "To monitor weather",
+        "To ensure effective coordination during operations",
+        "To track cargo quantity",
+        "To manage crew shifts"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 95,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – ISGOTT CHECKS",
+      "question": "What is required regarding smoking during cargo operations?",
+      "options": [
+        "No restrictions",
+        "Smoking restrictions must be agreed",
+        "Smoking allowed on deck",
+        "Smoking allowed in engine room"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 96,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – ISGOTT CHECKS",
+      "question": "What must be confirmed regarding fire-fighting equipment?",
+      "options": [
+        "It is stored away",
+        "It is ready for immediate use",
+        "It is inspected weekly only",
+        "It is not required"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 97,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – ISGOTT CHECKS",
+      "question": "What is the maximum oxygen content in cargo tanks before transfer?",
+      "options": [
+        "21%",
+        "15%",
+        "8%",
+        "5%"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 98,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – ISGOTT CHECKS",
+      "question": "Why must inert gas pressure be maintained positive?",
+      "options": [
+        "To improve cargo flow",
+        "To prevent air ingress into tanks",
+        "To reduce cargo temperature",
+        "To assist pumping"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 99,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – STS OPERATIONS",
+      "question": "What is the purpose of rigging fenders during STS operations?",
+      "options": [
+        "To improve speed",
+        "To protect vessels from contact damage",
+        "To assist navigation",
+        "To control cargo flow"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 100,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – STS OPERATIONS",
+      "question": "What must be checked regarding mooring equipment before STS operations?",
+      "options": [
+        "Colour of ropes",
+        "Readiness and brake function",
+        "Crew availability",
+        "Fuel consumption"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 101,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – STS OPERATIONS",
+      "question": "Why is firefighting equipment positioned during STS operations?",
+      "options": [
+        "For inspection only",
+        "To respond immediately to emergencies",
+        "To meet documentation requirements",
+        "To assist cargo transfer"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 102,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – STS OPERATIONS",
+      "question": "What is the purpose of plugging scuppers during STS operations?",
+      "options": [
+        "To improve drainage",
+        "To contain spills and prevent pollution",
+        "To reduce ballast water",
+        "To assist mooring"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 103,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – STS OPERATIONS",
+      "question": "Why must communication equipment be tested before STS operations?",
+      "options": [
+        "To monitor weather",
+        "To ensure coordination between vessels",
+        "To track cargo quantity",
+        "To control engines"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 104,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – STS OPERATIONS",
+      "question": "What is a reason to stop cargo transfer operations?",
+      "options": [
+        "Smooth weather conditions",
+        "Oil leakage detected",
+        "Stable mooring",
+        "Clear communication"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 105,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – STS OPERATIONS",
+      "question": "What should happen if communication between vessels fails?",
+      "options": [
+        "Continue operations",
+        "Reduce speed",
+        "Stop transfer operations",
+        "Ignore issue"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 106,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – STS OPERATIONS",
+      "question": "What environmental condition may require stopping operations?",
+      "options": [
+        "Calm seas",
+        "Electrical storms",
+        "Clear skies",
+        "Low temperature"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 107,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – STS OPERATIONS",
+      "question": "What condition related to mooring may require stopping operations?",
+      "options": [
+        "Lines correctly tensioned",
+        "Lines damaged or shifted",
+        "Lines newly installed",
+        "Lines inspected"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 108,
+      "subject": "Marine Operations",
+      "topic": "SHIP OPERATIONS – STS OPERATIONS",
+      "question": "Why must cargo manifold areas be cleared before operations?",
+      "options": [
+        "For aesthetics",
+        "To ensure safe connection and operation",
+        "To improve speed",
+        "To reduce crew workload"
+      ],
+      "correctIndex": 1,
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."

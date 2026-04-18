@@ -102,6 +102,7 @@ for (let i = 1; i < lines.length; i++) {
   questions.push({
     id: parseInt(row.questionNumber) || i,
     subject: row.subject.trim(),
+    topic: row.topic?.trim() || '',
     question: row.questionText.trim(),
     options: [
       row.optionA?.trim() || '',

@@ -7,7 +7,7 @@ export type ProgressRecord = {
   completedAt: string
 }
 
-const STORAGE_KEY = 'sea-ready-progress'
+const STORAGE_KEY = 'mastermarinerpro-progress'
 
 export function getProgress(): ProgressRecord[] {
   if (typeof window === 'undefined') return []

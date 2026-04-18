@@ -17,10 +17,11 @@ const serwist = new Serwist({
   navigationPreload: true,
   runtimeCaching: [
     {
-      // Cache the questions API with NetworkFirst — serves from cache when offline
-      matcher: ({ url }) => url.pathname === '/api/questions',
+      // Cache questions.json with NetworkFirst — serves from cache when offline.
+      // The quiz page reads this directly, so any topic can be filtered offline.
+      matcher: ({ url }) => url.pathname === '/questions.json',
       handler: new NetworkFirst({
-        cacheName: 'api-questions',
+        cacheName: 'questions-json',
         networkTimeoutSeconds: 5,
       }),
     },

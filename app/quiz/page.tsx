@@ -7,28 +7,53 @@ import { QuizSession } from '@/components/quiz/QuizSession'
 import { Question } from '@/lib/questions'
 import { ChevronLeft, WifiOff } from 'lucide-react'
 
+function shuffleArray<T>(arr: T[]): T[] {
+  const copy = [...arr]
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[copy[i], copy[j]] = [copy[j], copy[i]]
+  }
+  return copy
+}
+
 function QuizPageInner() {
   const searchParams = useSearchParams()
   const router = useRouter()
   const subject = searchParams.get('subject') || '__random__'
+  const topic = searchParams.get('topic') || ''
 
   const [questions, setQuestions] = useState<Question[]>([])
   const [loading, setLoading] = useState(true)
   const [offline, setOffline] = useState(false)
 
   useEffect(() => {
-    fetch('/api/questions')
+    setLoading(true)
+    setOffline(false)
+
+    const controller = new AbortController()
+
+    // Fetch the static JSON directly — it's precached by the service worker,
+    // so filtering works correctly offline for any topic.
+    fetch('/questions.json', { signal: controller.signal })
       .then(r => {
         if (!r.ok) throw new Error(`HTTP ${r.status}`)
         return r.json()
       })
-      .then(data => {
-        const allQuestions: Question[] = data.questions
+      .then((data: { questions: Question[] }) => {
+        const allQuestions = data.questions
         const isRandom = subject === '__random__'
+        const isMix = topic === '__mix__'
 
-        const filtered = isRandom
-          ? [...allQuestions].sort(() => Math.random() - 0.5).slice(0, 10)
-          : allQuestions.filter(q => q.subject === subject)
+        let filtered: Question[]
+        if (isRandom) {
+          filtered = shuffleArray(allQuestions).slice(0, 10)
+        } else if (isMix) {
+          filtered = shuffleArray(allQuestions.filter(q => q.subject === subject)).slice(0, 20)
+        } else if (topic) {
+          filtered = allQuestions.filter(q => q.subject === subject && q.topic === topic)
+        } else {
+          filtered = allQuestions.filter(q => q.subject === subject)
+        }
 
         if (filtered.length === 0) {
           router.replace('/topics')
@@ -38,13 +63,21 @@ function QuizPageInner() {
         setQuestions(filtered)
         setLoading(false)
       })
-      .catch(() => {
+      .catch(err => {
+        if (err.name === 'AbortError') return
         setOffline(true)
         setLoading(false)
       })
-  }, [subject])
 
-  const displayName = subject === '__random__' ? 'Random Mix' : subject
+    return () => controller.abort()
+  }, [subject, topic])
+
+  const displayName =
+    subject === '__random__'
+      ? 'Random Mix'
+      : topic === '__mix__'
+        ? `${subject} — Topic Mix`
+        : topic || subject
 
   return (
     <div className="mx-auto max-w-lg min-h-svh flex flex-col px-5 pt-12 pb-12">

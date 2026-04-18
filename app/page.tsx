@@ -14,7 +14,7 @@ export default function HomePage() {
       {/* App header */}
       <header className="flex items-center justify-between px-5 pt-12 pb-4">
         <div>
-          <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-0.5">SeaReady</p>
+          <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-0.5">MasterMarinerPro</p>
           <Greeting />
         </div>
         <Link
@@ -28,35 +28,14 @@ export default function HomePage() {
 
       <div className="flex flex-col gap-6 px-5 pb-12 flex-1">
 
-        {/* Main CTA */}
-        <Link
-          href="/quiz?subject=__random__"
-          className="group flex items-center justify-between rounded-2xl bg-primary px-6 py-5 transition-all duration-200 active:scale-[0.98]"
-        >
-          <div>
-            <p className="font-semibold text-primary-foreground text-lg">Random Mix</p>
-            <p className="mt-0.5 text-sm text-primary-foreground/70">
-              {questions.length} questions · {subjects.length} topics
-            </p>
-          </div>
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20 transition-transform duration-200 group-hover:translate-x-0.5">
-            <ArrowRight className="h-5 w-5 text-white" strokeWidth={2} />
-          </div>
-        </Link>
-
-        {/* Topics */}
+        {/* Subjects */}
         <div>
-          <div className="flex items-center justify-between mb-3">
-            <p className="text-sm font-semibold text-primary">Topics</p>
-            <Link href="/topics" className="text-xs text-muted-foreground hover:text-primary transition-colors">
-              See all
-            </Link>
-          </div>
+          <p className="text-sm font-semibold text-primary mb-3">Subjects</p>
           <div className="grid grid-cols-2 gap-3">
             {subjects.map((subject) => (
               <Link
                 key={subject.name}
-                href={`/quiz?subject=${encodeURIComponent(subject.name)}`}
+                href={`/subjects/${encodeURIComponent(subject.name)}`}
                 className="group flex flex-col gap-3 rounded-xl border border-border bg-card px-4 py-4 transition-all duration-150 hover:border-primary/40 hover:bg-accent active:scale-[0.98]"
               >
                 <p className="text-sm font-semibold text-foreground leading-tight line-clamp-2">{subject.name}</p>
@@ -65,6 +44,22 @@ export default function HomePage() {
             ))}
           </div>
         </div>
+
+        {/* Random Mix */}
+        <Link
+          href="/quiz?subject=__random__"
+          className="group flex items-center justify-between rounded-2xl bg-primary px-6 py-5 transition-all duration-200 active:scale-[0.98]"
+        >
+          <div>
+            <p className="font-semibold text-primary-foreground text-lg">Random Mix</p>
+            <p className="mt-0.5 text-sm text-primary-foreground/70">
+              {questions.length} questions · all subjects
+            </p>
+          </div>
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20 transition-transform duration-200 group-hover:translate-x-0.5">
+            <ArrowRight className="h-5 w-5 text-white" strokeWidth={2} />
+          </div>
+        </Link>
 
         {/* Progress */}
         <div>

@@ -2,8 +2,8 @@ import type { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'SeaReady',
-    short_name: 'SeaReady',
+    name: 'MasterMarinerPro',
+    short_name: 'MasterMarinerPro',
     description: 'Marine Studies Quiz App',
     start_url: '/topics',
     display: 'standalone',

@@ -4,12 +4,12 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { UserProvider } from "@/lib/user-context"
 
 export const metadata: Metadata = {
-  title: 'SeaReady',
+  title: 'MasterMarinerPro',
   description: 'Marine Studies Quiz App',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
-    title: 'SeaReady',
+    title: 'MasterMarinerPro',
   },
   icons: {
     apple: '/icons/apple-touch-icon.png',
