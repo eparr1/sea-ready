@@ -1727,6 +1727,486 @@
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
+    },
+    {
+      "id": 109,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "What condition ensures a cargo tank atmosphere is non-flammable?",
+      "options": [
+        "Hydrocarbon within flammable limits",
+        "Oxygen above 15%",
+        "High tank pressure",
+        "Oxygen below 11%"
+      ],
+      "correctIndex": 3,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 110,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "What is the typical Lower Flammable Limit LFL for hydrocarbon gases?",
+      "options": [
+        "15%",
+        "10%",
+        "1%",
+        "5%"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 111,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "What happens if hydrocarbon concentration exceeds the Upper Flammable Limit UFL?",
+      "options": [
+        "Pressure drops",
+        "Oxygen increases",
+        "Explosion risk increases",
+        "Mixture becomes too rich to burn"
+      ],
+      "correctIndex": 3,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 112,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "Why is inert gas introduced into cargo tanks?",
+      "options": [
+        "Improve cargo viscosity",
+        "Reduce oxygen content",
+        "Increase pressure",
+        "Remove water vapour"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 113,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "What is the maximum oxygen content of inert gas delivered from the IG plant?",
+      "options": [
+        "Less than 10%",
+        "Less than 5%",
+        "Less than 3%",
+        "Less than 8%"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 114,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "What is the maximum oxygen content allowed in cargo tanks?",
+      "options": [
+        "Maximum 12%",
+        "Maximum 5%",
+        "Maximum 8%",
+        "Maximum 10%"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 115,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "Why must cargo tanks be maintained at positive pressure?",
+      "options": [
+        "Increase density",
+        "Prevent air ingress",
+        "Reduce temperature",
+        "Improve cargo flow"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 116,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "What is the danger of gas freeing a tank without purging first?",
+      "options": [
+        "Oxygen depletion",
+        "Cargo contamination",
+        "Passing through flammable range",
+        "Tank overpressure"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 117,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "What hydrocarbon level is typically targeted before gas freeing?",
+      "options": [
+        "5%",
+        "2%",
+        "10%",
+        "1%"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 118,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "What is the purpose of purging a tank?",
+      "options": [
+        "Remove inert gas",
+        "Increase pressure",
+        "Reduce hydrocarbon content",
+        "Increase oxygen"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 119,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "What is the primary function of the IG scrubber tower?",
+      "options": [
+        "Store inert gas",
+        "Cool and clean flue gas",
+        "Increase pressure",
+        "Remove oxygen"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 120,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "What does the demister remove in the IG system?",
+      "options": [
+        "Heat",
+        "Water droplets",
+        "Oxygen",
+        "Hydrocarbons"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 121,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "Why is positive pressure maintained in cargo tanks?",
+      "options": [
+        "Increase temperature",
+        "Prevent cargo loss",
+        "Reduce corrosion",
+        "Prevent air ingress"
+      ],
+      "correctIndex": 3,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 122,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "What is the critical oxygen level below which combustion cannot occur?",
+      "options": [
+        "15%",
+        "8%",
+        "11%",
+        "5%"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 123,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "What is the main hazard of static electricity during cargo operations?",
+      "options": [
+        "Pressure loss",
+        "Ignition source",
+        "Corrosion",
+        "Cargo contamination"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 124,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "Why are scuppers plugged during cargo operations?",
+      "options": [
+        "Reduce temperature",
+        "Prevent pollution",
+        "Improve drainage",
+        "Increase pressure"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 125,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "What must be confirmed before cargo transfer begins?",
+      "options": [
+        "Crew rested",
+        "Communications tested",
+        "Weather calm",
+        "Tank empty"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 126,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "What is the purpose of PV valves?",
+      "options": [
+        "Remove oxygen",
+        "Heat cargo",
+        "Control tank pressure",
+        "Increase pressure"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 127,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "What is a key reason to stop STS operations?",
+      "options": [
+        "Full tanks",
+        "Oil spill detected",
+        "Daylight",
+        "Calm weather"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 128,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "Why is intrinsically safe equipment used?",
+      "options": [
+        "Improve signal",
+        "Prevent ignition",
+        "Reduce cost",
+        "Increase power"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 129,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "What is the function of the deck water seal?",
+      "options": [
+        "Remove soot",
+        "Prevent backflow",
+        "Cool gas",
+        "Increase pressure"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 130,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "What is required before tank entry?",
+      "options": [
+        "Close valves",
+        "Gas free and test atmosphere",
+        "Increase pressure",
+        "Add inert gas"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 131,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "What is the first step before gas freeing a tank?",
+      "options": [
+        "Heating",
+        "Loading",
+        "Purging",
+        "Ventilation"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 132,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "What happens if oxygen increases above safe limits in a tank?",
+      "options": [
+        "Temperature falls",
+        "Explosion risk increases",
+        "Pressure drops",
+        "No effect"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 133,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "What is the main role of inert gas during discharge?",
+      "options": [
+        "Remove impurities",
+        "Replace volume",
+        "Increase oxygen",
+        "Cool cargo"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 134,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "What is a key hazard in pumproom spaces?",
+      "options": [
+        "Cold temperatures",
+        "Gas accumulation",
+        "High oxygen",
+        "Low pressure"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 135,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "What should be checked on manifolds before transfer?",
+      "options": [
+        "Temperature",
+        "Support and connections",
+        "Paint condition",
+        "Colour"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 136,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "Why must accommodation be pressurised?",
+      "options": [
+        "Reduce humidity",
+        "Prevent gas ingress",
+        "Improve comfort",
+        "Increase oxygen"
+      ],
+      "correctIndex": 1,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 137,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "What is the function of IG blowers?",
+      "options": [
+        "Heat gas",
+        "Store gas",
+        "Deliver inert gas",
+        "Filter gas"
+      ],
+      "correctIndex": 2,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 138,
+      "subject": "Marine Operations",
+      "topic": "Oil Tankers",
+      "question": "What is the safe oxygen level before tank entry?",
+      "options": [
+        "5%",
+        "15%",
+        "8%",
+        "20.90%"
+      ],
+      "correctIndex": 3,
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
     }
   ]
 }
