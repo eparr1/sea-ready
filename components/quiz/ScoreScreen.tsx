@@ -10,12 +10,18 @@ type Props = {
   onRestart: () => void
 }
 
+function arraysEqualSorted(a: number[], b: number[]) {
+  const sa = [...a].sort((x, y) => x - y)
+  const sb = [...b].sort((x, y) => x - y)
+  return sa.length === sb.length && sa.every((v, i) => v === sb[i])
+}
+
 export function ScoreScreen({ subject, questions, onRestart }: Props) {
   const router = useRouter()
   const { score, answers } = useQuiz()
 
   const percentage = Math.round((score / questions.length) * 100)
-  const wrongAnswers = answers.filter(a => a.selectedIndex !== a.correctIndex)
+  const wrongAnswers = answers.filter(a => !arraysEqualSorted(a.selectedIndexes, a.correctIndexes))
 
   return (
     <div className="flex flex-col gap-5">
@@ -38,14 +44,18 @@ export function ScoreScreen({ subject, questions, onRestart }: Props) {
           {wrongAnswers.map((answer) => {
             const question = questions.find(q => q.id === answer.questionId)
             if (!question) return null
+            const yourAnswerText = answer.selectedIndexes.length > 0
+              ? answer.selectedIndexes.map(i => question.options[i]).join(', ')
+              : 'No answer selected'
+            const correctText = answer.correctIndexes.map(i => question.options[i]).join(', ')
             return (
               <div
                 key={answer.questionId}
                 className="rounded-xl border border-border bg-card px-4 py-4 flex flex-col gap-2 text-sm"
               >
                 <p className="font-medium text-foreground leading-snug">{question.question}</p>
-                <p className="text-red-500 text-xs">Your answer: {question.options[answer.selectedIndex]}</p>
-                <p className="text-green-600 text-xs">Correct: {question.options[answer.correctIndex]}</p>
+                <p className="text-red-500 text-xs">Your answer: {yourAnswerText}</p>
+                <p className="text-green-600 text-xs">Correct: {correctText}</p>
                 <p className="text-muted-foreground text-xs leading-relaxed">{question.explanation}</p>
               </div>
             )

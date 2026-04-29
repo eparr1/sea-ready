@@ -91,8 +91,9 @@ for (let i = 1; i < lines.length; i++) {
     continue
   }
 
-  const correctLetter = row.correct.trim().toUpperCase()
-  if (!(correctLetter in answerMap)) {
+  const correctLetters = row.correct.trim().toUpperCase().split(',').map(l => l.trim()).filter(Boolean)
+  const correctIndexes = correctLetters.map(l => answerMap[l]).filter(i => i !== undefined)
+  if (correctIndexes.length === 0) {
     console.warn(`  Skipping row ${row.questionNumber || i}: invalid correct answer "${row.correct}"`)
     continue
   }
@@ -110,7 +111,7 @@ for (let i = 1; i < lines.length; i++) {
       row.optionC?.trim() || '',
       row.optionD?.trim() || '',
     ],
-    correctIndex: answerMap[correctLetter],
+    correctIndexes,
     difficulty,
     tierLabel,
     explanation: row.explanation?.trim() || 'No explanation yet.',

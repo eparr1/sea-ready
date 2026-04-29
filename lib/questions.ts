@@ -7,7 +7,7 @@ export type Question = {
   topic: string
   question: string
   options: string[]
-  correctIndex: number
+  correctIndexes: number[]
   difficulty: string
   tierLabel: string
   explanation: string

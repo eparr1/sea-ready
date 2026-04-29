@@ -39,8 +39,12 @@ function QuizPageInner() {
         if (!r.ok) throw new Error(`HTTP ${r.status}`)
         return r.json()
       })
-      .then((data: { questions: Question[] }) => {
-        const allQuestions = data.questions
+      .then((data: { questions: (Question & { correctIndex?: number })[] }) => {
+        // Normalize legacy correctIndex → correctIndexes
+        const allQuestions: Question[] = data.questions.map(q => ({
+          ...q,
+          correctIndexes: q.correctIndexes ?? (q.correctIndex !== undefined ? [q.correctIndex] : [0]),
+        }))
         const isRandom = subject === '__random__'
         const isMix = topic === '__mix__'
 

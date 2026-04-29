@@ -5,14 +5,14 @@ import { Question } from '@/lib/questions'
 
 type Answer = {
   questionId: number
-  selectedIndex: number
-  correctIndex: number
+  selectedIndexes: number[]
+  correctIndexes: number[]
 }
 
 type QuizState = {
   questions: Question[]
   currentIndex: number
-  selectedIndex: number | null
+  selectedIndexes: number[]
   isRevealed: boolean
   score: number
   answers: Answer[]
@@ -22,16 +22,21 @@ type QuizState = {
 type QuizContextType = QuizState & {
   startQuiz: (questions: Question[]) => void
   selectAnswer: (index: number) => void
+  confirmAnswers: () => void
   nextQuestion: () => void
 }
 
 const QuizContext = createContext<QuizContextType | null>(null)
 
+function arraysEqual(a: number[], b: number[]) {
+  return a.length === b.length && a.every((v, i) => v === b[i])
+}
+
 export function QuizProvider({ children }: { children: React.ReactNode }) {
   const [state, setState] = useState<QuizState>({
     questions: [],
     currentIndex: 0,
-    selectedIndex: null,
+    selectedIndexes: [],
     isRevealed: false,
     score: 0,
     answers: [],
@@ -42,7 +47,7 @@ export function QuizProvider({ children }: { children: React.ReactNode }) {
     setState({
       questions,
       currentIndex: 0,
-      selectedIndex: null,
+      selectedIndexes: [],
       isRevealed: false,
       score: 0,
       answers: [],
@@ -53,16 +58,46 @@ export function QuizProvider({ children }: { children: React.ReactNode }) {
   function selectAnswer(index: number) {
     if (state.isRevealed) return
     const current = state.questions[state.currentIndex]
-    const isCorrect = index === current.correctIndex
+    const isMultiple = current.correctIndexes.length > 1
+
+    if (isMultiple) {
+      // Toggle selection for multi-answer questions
+      setState(prev => ({
+        ...prev,
+        selectedIndexes: prev.selectedIndexes.includes(index)
+          ? prev.selectedIndexes.filter(i => i !== index)
+          : [...prev.selectedIndexes, index],
+      }))
+    } else {
+      // Auto-reveal for single-answer questions
+      const isCorrect = arraysEqual([index], current.correctIndexes)
+      setState(prev => ({
+        ...prev,
+        selectedIndexes: [index],
+        isRevealed: true,
+        score: isCorrect ? prev.score + 1 : prev.score,
+        answers: [...prev.answers, {
+          questionId: current.id,
+          selectedIndexes: [index],
+          correctIndexes: current.correctIndexes,
+        }],
+      }))
+    }
+  }
+
+  function confirmAnswers() {
+    if (state.isRevealed) return
+    const current = state.questions[state.currentIndex]
+    const sorted = (arr: number[]) => [...arr].sort((a, b) => a - b)
+    const isCorrect = arraysEqual(sorted(state.selectedIndexes), sorted(current.correctIndexes))
     setState(prev => ({
       ...prev,
-      selectedIndex: index,
       isRevealed: true,
       score: isCorrect ? prev.score + 1 : prev.score,
       answers: [...prev.answers, {
         questionId: current.id,
-        selectedIndex: index,
-        correctIndex: current.correctIndex,
+        selectedIndexes: prev.selectedIndexes,
+        correctIndexes: current.correctIndexes,
       }],
     }))
   }
@@ -72,14 +107,14 @@ export function QuizProvider({ children }: { children: React.ReactNode }) {
     setState(prev => ({
       ...prev,
       currentIndex: isLast ? prev.currentIndex : prev.currentIndex + 1,
-      selectedIndex: null,
+      selectedIndexes: [],
       isRevealed: false,
       isFinished: isLast,
     }))
   }
 
   return (
-    <QuizContext.Provider value={{ ...state, startQuiz, selectAnswer, nextQuestion }}>
+    <QuizContext.Provider value={{ ...state, startQuiz, selectAnswer, confirmAnswers, nextQuestion }}>
       {children}
     </QuizContext.Provider>
   )

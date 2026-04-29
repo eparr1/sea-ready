@@ -11,7 +11,9 @@
         "No",
         "Yes, if recorded"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -27,7 +29,9 @@
         "Yes, only if under 15 ppm",
         "Yes, only with Master approval"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -43,7 +47,9 @@
         "No, exceeds limit",
         "Yes, if recorded"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -59,7 +65,9 @@
         "No, vessel must be en route",
         "Yes, if recorded"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -75,7 +83,9 @@
         "Yes, if under 15 ppm",
         "No, unless in port"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -91,7 +101,9 @@
         "Yes, if more than 50 nm from land",
         "Yes, tankers only"
       ],
-      "correctIndex": 0,
+      "correctIndexes": [
+        0
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -107,7 +119,9 @@
         "Stop discharge immediately",
         "Record and continue"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -123,7 +137,9 @@
         "Only Master signature required",
         "Only Chief Engineers signature is required"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -139,7 +155,9 @@
         "No, prohibited",
         "Yes, with approval"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -155,7 +173,9 @@
         "No",
         "Yes, if recorded"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -171,7 +191,9 @@
         "Prewash to reception",
         "Underwater outlet"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -187,7 +209,9 @@
         "Only ppm limits apply",
         "Only in port"
       ],
-      "correctIndex": 0,
+      "correctIndexes": [
+        0
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -203,7 +227,9 @@
         "Yes if en route",
         "Yes if depth condition met"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -219,7 +245,9 @@
         "Yes if depth condition met",
         "Yes if speed condition met"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -235,7 +263,9 @@
         "No",
         "Yes if monitored"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -251,7 +281,9 @@
         "Only to shore reception",
         "Prewash required"
       ],
-      "correctIndex": 0,
+      "correctIndexes": [
+        0
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -267,7 +299,9 @@
         "No",
         "Yes if recorded"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -283,7 +317,9 @@
         "Only for new ships",
         "Only for Category X and Y"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -299,7 +335,9 @@
         "Cargo Record Book",
         "Deck logbook"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -315,7 +353,9 @@
         "Discharge only allowed if under 15 ppm",
         "Discharge only allowed after prewash"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -331,7 +371,9 @@
         "Yes",
         "Only if treated"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -347,7 +389,9 @@
         "Only if comminuted",
         "No"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -363,7 +407,9 @@
         "Only if recorded",
         "Only in port"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -379,7 +425,9 @@
         "No",
         "Only if recorded"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -395,7 +443,9 @@
         "Yes",
         "No"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -411,7 +461,9 @@
         "No",
         "Only if recorded"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -427,7 +479,9 @@
         "Only if comminuted",
         "Yes"
       ],
-      "correctIndex": 3,
+      "correctIndexes": [
+        3
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -443,7 +497,9 @@
         "Only if recorded",
         "Yes"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -459,7 +515,9 @@
         "Cargo Record Book",
         "Garbage Record Book"
       ],
-      "correctIndex": 3,
+      "correctIndexes": [
+        3
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -475,7 +533,9 @@
         "Plastics",
         "Cargo residues"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -491,7 +551,9 @@
         "Standardise crew employment contracts",
         "Replace classification society rules"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -507,7 +569,9 @@
         "Ship construction standards",
         "Port state inspection procedures"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -523,7 +587,9 @@
         "A situation that may develop into a non-conformity if not corrected",
         "Immediate suspension of the Safety Management Certificate"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -539,7 +605,9 @@
         "A Major Non-Conformity automatically",
         "A commercial deficiency"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -555,7 +623,9 @@
         "A Major Non-Conformity",
         "A minor administrative error"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -571,7 +641,9 @@
         "Identify root causes and prevent recurrence",
         "Satisfy port state control only"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -587,7 +659,9 @@
         "Ineffective implementation of the SMS",
         "A documentation error"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -603,7 +677,9 @@
         "Conduct ship design modifications",
         "Control port tariffs"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -619,7 +695,9 @@
         "Reduced workload for the Master",
         "Commercial efficiency"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -635,7 +713,9 @@
         "Overly strict auditing",
         "Excessive reporting requirements"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -651,7 +731,9 @@
         "Emergency security measures only",
         "Security measures only in port"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -667,7 +749,9 @@
         "No security threat present",
         "Security measures suspended"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -683,7 +767,9 @@
         "Further specific measures when a security incident is probable or imminent",
         "No access to port facilities"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -699,7 +785,9 @@
         "A minor unsafe act",
         "A recorded accident"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -715,7 +803,9 @@
         "The likelihood of harm combined with severity",
         "The number of accidents onboard"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -731,7 +821,9 @@
         "A systematic process of identifying hazards, evaluating risks, and implementing controls",
         "A maintenance procedure"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -747,7 +839,9 @@
         "Evaluate risks, identify hazards, record findings, review",
         "Decide who may be harmed, record findings, identify hazards"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -763,7 +857,9 @@
         "A formal written document controlling hazardous work and confirming safety precautions",
         "A logbook entry"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -779,7 +875,9 @@
         "The most senior officer",
         "The Master only"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -795,7 +893,9 @@
         "A person appointed by the Master to issue, control, and close permits",
         "Any officer on watch"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -811,7 +911,9 @@
         "A detention notice",
         "A type of accident report"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -827,7 +929,9 @@
         "Non-fulfilment of a specified requirement",
         "A maintenance delay"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -843,7 +947,9 @@
         "A serious deviation posing immediate risk to safety or environment",
         "A minor procedural issue"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -859,7 +965,9 @@
         "Any work where a person could fall a distance liable to cause injury",
         "Working on cargo operations"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -875,7 +983,9 @@
         "Annex V",
         "Annex VI"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -891,7 +1001,9 @@
         "All passenger ships",
         "Ships below 150 GT"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -907,7 +1019,9 @@
         "Garbage handling",
         "Ballast water management"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -923,7 +1037,9 @@
         "Garbage disposal only",
         "Fuel oil transfer procedures"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -939,7 +1055,9 @@
         "Bunkering of fuel oil",
         "Discharge of cargo ballast"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -955,7 +1073,9 @@
         "Cleaning of cargo tanks",
         "Ballasting of cargo tanks"
       ],
-      "correctIndex": 0,
+      "correctIndexes": [
+        0
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -971,7 +1091,9 @@
         "All cargo ships",
         "Passenger ships only"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -987,7 +1109,9 @@
         "Food waste disposal",
         "Ballast water exchange procedures"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1003,7 +1127,9 @@
         "Discharge of engine room bilges",
         "Collection of sludge"
       ],
-      "correctIndex": 0,
+      "correctIndexes": [
+        0
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1019,7 +1145,9 @@
         "Fuel oil transfer to settling tank",
         "Sludge disposal"
       ],
-      "correctIndex": 0,
+      "correctIndexes": [
+        0
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1035,7 +1163,9 @@
         "As cargo-related residues",
         "As treated discharge"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1051,7 +1181,9 @@
         "No",
         "Only in port"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1067,7 +1199,9 @@
         "The officer in charge, with each page countersigned by the Master",
         "Any crew member"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1083,7 +1217,9 @@
         "Three years",
         "Five years"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1099,7 +1235,9 @@
         "Bilge discharge from engine room",
         "Collection of sludge"
       ],
-      "correctIndex": 0,
+      "correctIndexes": [
+        0
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1115,7 +1253,9 @@
         "Standardise ship design globally",
         "Replace flag State regulations"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1131,7 +1271,9 @@
         "Port tariff procedures",
         "Cargo pricing strategy"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1147,7 +1289,9 @@
         "Procedures for charter agreements",
         "Procedures for customs clearance"
       ],
-      "correctIndex": 0,
+      "correctIndexes": [
+        0
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1163,7 +1307,9 @@
         "To ensure clear responsibility between shore and shipboard personnel",
         "To avoid audits"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1179,7 +1325,9 @@
         "Procedures for port negotiations",
         "Procedures for crew leave"
       ],
-      "correctIndex": 0,
+      "correctIndexes": [
+        0
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1195,7 +1343,9 @@
         "Procedures for shipbuilding design",
         "Procedures for fuel pricing"
       ],
-      "correctIndex": 0,
+      "correctIndexes": [
+        0
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1211,7 +1361,9 @@
         "A detention notice issued by port state",
         "A completed corrective action"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1227,7 +1379,9 @@
         "A routine observation",
         "A maintenance delay"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1243,7 +1397,9 @@
         "A serious risk or systemic failure requiring immediate corrective action",
         "A delayed report submission"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1259,7 +1415,9 @@
         "To calculate fuel consumption",
         "To manage crew shifts"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1275,7 +1433,9 @@
         "Port customs tariffs",
         "Navigation routes"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1291,7 +1451,9 @@
         "Only tank capacity",
         "Only cargo density"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1307,7 +1469,9 @@
         "To reduce fuel usage",
         "For port authority records"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1323,7 +1487,9 @@
         "To manage ballast water",
         "To control navigation"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1339,7 +1505,9 @@
         "Discharge rate during unloading",
         "Ballast pumping rate"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1355,7 +1523,9 @@
         "To meet port requirements only",
         "To reduce loading time"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1371,7 +1541,9 @@
         "Bridge visibility",
         "Fuel consumption"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1387,7 +1559,9 @@
         "Port documentation",
         "Meteorological data"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1403,7 +1577,9 @@
         "Oil Record Book Part II",
         "Cargo manifest"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1419,7 +1595,9 @@
         "To calculate cargo quantity",
         "To record fuel use"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1435,7 +1613,9 @@
         "Fendering effectiveness",
         "Engine RPM"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1451,7 +1631,9 @@
         "To improve stability",
         "To assist ballast operations"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1467,7 +1649,9 @@
         "To reduce fuel consumption",
         "To improve stability"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1483,7 +1667,9 @@
         "To reduce noise",
         "To improve comfort"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1499,7 +1685,9 @@
         "To track cargo quantity",
         "To manage crew shifts"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1515,7 +1703,9 @@
         "Smoking allowed on deck",
         "Smoking allowed in engine room"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1531,7 +1721,9 @@
         "It is inspected weekly only",
         "It is not required"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1547,7 +1739,9 @@
         "8%",
         "5%"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1563,7 +1757,9 @@
         "To reduce cargo temperature",
         "To assist pumping"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1579,7 +1775,9 @@
         "To assist navigation",
         "To control cargo flow"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1595,7 +1793,9 @@
         "Crew availability",
         "Fuel consumption"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1611,7 +1811,9 @@
         "To meet documentation requirements",
         "To assist cargo transfer"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1627,7 +1829,9 @@
         "To reduce ballast water",
         "To assist mooring"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1643,7 +1847,9 @@
         "To track cargo quantity",
         "To control engines"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1659,7 +1865,9 @@
         "Stable mooring",
         "Clear communication"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1675,7 +1883,9 @@
         "Stop transfer operations",
         "Ignore issue"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1691,7 +1901,9 @@
         "Clear skies",
         "Low temperature"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1707,7 +1919,9 @@
         "Lines newly installed",
         "Lines inspected"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1723,7 +1937,9 @@
         "To improve speed",
         "To reduce crew workload"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1732,14 +1948,16 @@
       "id": 109,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "What condition ensures a cargo tank atmosphere is non-flammable?",
+      "question": "During discharge oxygen level in cargo tank rises above safe limits what is the most appropriate action",
       "options": [
-        "Hydrocarbon within flammable limits",
-        "Oxygen above 15%",
-        "High tank pressure",
-        "Oxygen below 11%"
+        "Ignore if pressure is positive",
+        "Stop cargo operations and investigate IG system",
+        "Increase cargo rate",
+        "Continue discharge and monitor"
       ],
-      "correctIndex": 3,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1748,14 +1966,16 @@
       "id": 110,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "What is the typical Lower Flammable Limit LFL for hydrocarbon gases?",
+      "question": "While inerting oxygen content in IG supply exceeds limits what should the OOW do",
       "options": [
-        "15%",
-        "10%",
-        "1%",
-        "5%"
+        "Continue inerting",
+        "Stop IG supply and investigate cause",
+        "Increase blower speed",
+        "Open tank vents"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1764,14 +1984,16 @@
       "id": 111,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "What happens if hydrocarbon concentration exceeds the Upper Flammable Limit UFL?",
+      "question": "During gas freeing hydrocarbon levels pass through flammable range what is the primary risk",
       "options": [
-        "Pressure drops",
-        "Oxygen increases",
-        "Explosion risk increases",
-        "Mixture becomes too rich to burn"
+        "Cargo contamination",
+        "Explosion risk",
+        "Temperature increase",
+        "Pressure loss"
       ],
-      "correctIndex": 3,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1780,14 +2002,16 @@
       "id": 112,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "Why is inert gas introduced into cargo tanks?",
+      "question": "IG pressure in cargo tanks drops below positive pressure during discharge what is the best action",
       "options": [
-        "Improve cargo viscosity",
-        "Reduce oxygen content",
-        "Increase pressure",
-        "Remove water vapour"
+        "Reduce cargo temperature",
+        "Continue discharge slowly",
+        "Ignore temporarily",
+        "Restore IG pressure immediately"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        3
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1796,14 +2020,16 @@
       "id": 113,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "What is the maximum oxygen content of inert gas delivered from the IG plant?",
+      "question": "During tank washing IG system pressure fluctuates unexpectedly what is the most appropriate action",
       "options": [
-        "Less than 10%",
-        "Less than 5%",
-        "Less than 3%",
-        "Less than 8%"
+        "Increase washing rate",
+        "Continue operations",
+        "Open vents",
+        "Stop and check IG system stability"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        3
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1812,14 +2038,16 @@
       "id": 114,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "What is the maximum oxygen content allowed in cargo tanks?",
+      "question": "Before cargo transfer communications between ship and terminal fail what should the OOW do",
       "options": [
-        "Maximum 12%",
-        "Maximum 5%",
-        "Maximum 8%",
-        "Maximum 10%"
+        "Inform after completion",
+        "Use hand signals only",
+        "Proceed cautiously",
+        "Stop operations until communication restored"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        3
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1828,14 +2056,16 @@
       "id": 115,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "Why must cargo tanks be maintained at positive pressure?",
+      "question": "During STS operations oil leakage is observed what is the first action",
       "options": [
-        "Increase density",
-        "Prevent air ingress",
-        "Reduce temperature",
-        "Improve cargo flow"
+        "Stop transfer operations",
+        "Notify port authority later",
+        "Increase pumping rate",
+        "Adjust moorings"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        0
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1844,14 +2074,16 @@
       "id": 116,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "What is the danger of gas freeing a tank without purging first?",
+      "question": "A PV valve is suspected stuck during cargo operations what is the most appropriate action",
       "options": [
-        "Oxygen depletion",
-        "Cargo contamination",
-        "Passing through flammable range",
-        "Tank overpressure"
+        "Ignore if pressure stable",
+        "Open tank hatches",
+        "Increase IG pressure",
+        "Stop operations and investigate"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        3
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1860,14 +2092,16 @@
       "id": 117,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "What hydrocarbon level is typically targeted before gas freeing?",
+      "question": "Before tank entry atmosphere shows unsafe oxygen levels what should be done",
       "options": [
-        "5%",
-        "2%",
-        "10%",
-        "1%"
+        "Reduce pressure",
+        "Continue ventilation and retest",
+        "Enter with PPE",
+        "Ignore if brief exposure"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1876,14 +2110,16 @@
       "id": 118,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "What is the purpose of purging a tank?",
+      "question": "During cargo operations accommodation ventilation fails what is the most appropriate action",
       "options": [
-        "Remove inert gas",
-        "Increase pressure",
-        "Reduce hydrocarbon content",
-        "Increase oxygen"
+        "Open doors for airflow",
+        "Ignore if short duration",
+        "Continue operations",
+        "Restore positive pressure immediately"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        3
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1892,14 +2128,16 @@
       "id": 119,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "What is the primary function of the IG scrubber tower?",
+      "question": "IG oxygen analyser shows rising readings during discharge what is the best action",
       "options": [
-        "Store inert gas",
-        "Cool and clean flue gas",
-        "Increase pressure",
-        "Remove oxygen"
+        "Stop monitoring",
+        "Investigate and correct IG supply",
+        "Ignore trend",
+        "Increase cargo rate"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1908,14 +2146,16 @@
       "id": 120,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "What does the demister remove in the IG system?",
+      "question": "Static discharge risk identified during loading what is the most appropriate control",
       "options": [
-        "Heat",
-        "Water droplets",
-        "Oxygen",
-        "Hydrocarbons"
+        "Increase loading rate",
+        "Ensure bonding and safe procedures",
+        "Reduce tank pressure",
+        "Increase ventilation"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1924,14 +2164,16 @@
       "id": 121,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "Why is positive pressure maintained in cargo tanks?",
+      "question": "Cargo tank pressure rising rapidly during loading what is the best action",
       "options": [
-        "Increase temperature",
-        "Prevent cargo loss",
-        "Reduce corrosion",
-        "Prevent air ingress"
+        "Open tank manually",
+        "Check PV valves and reduce rate",
+        "Ignore if within limits",
+        "Increase loading rate"
       ],
-      "correctIndex": 3,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1940,14 +2182,16 @@
       "id": 122,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "What is the critical oxygen level below which combustion cannot occur?",
+      "question": "Unexpected drop in IG supply pressure what is the most appropriate action",
       "options": [
-        "15%",
-        "8%",
-        "11%",
-        "5%"
+        "Continue operations",
+        "Increase cargo rate",
+        "Ignore briefly",
+        "Investigate IG system immediately"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        3
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1956,14 +2200,16 @@
       "id": 123,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "What is the main hazard of static electricity during cargo operations?",
+      "question": "Hydrocarbon readings remain high during purging what is the best action",
       "options": [
-        "Pressure loss",
-        "Ignition source",
-        "Corrosion",
-        "Cargo contamination"
+        "Increase oxygen",
+        "Stop all operations permanently",
+        "Continue purging",
+        "Reassess procedure and continue correctly"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        3
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1972,14 +2218,16 @@
       "id": 124,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "Why are scuppers plugged during cargo operations?",
+      "question": "Crew reports smell of gas on deck what is the most appropriate action",
       "options": [
-        "Reduce temperature",
-        "Prevent pollution",
-        "Improve drainage",
-        "Increase pressure"
+        "Increase ventilation only",
+        "Investigate and ensure safety",
+        "Ignore if brief",
+        "Continue operations"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -1988,14 +2236,16 @@
       "id": 125,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "What must be confirmed before cargo transfer begins?",
+      "question": "During discharge IG system trips what is the best action",
       "options": [
-        "Crew rested",
-        "Communications tested",
-        "Weather calm",
-        "Tank empty"
+        "Continue discharge",
+        "Ignore temporary fault",
+        "Increase cargo rate",
+        "Stop operations and restore IG"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        3
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -2004,14 +2254,16 @@
       "id": 126,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "What is the purpose of PV valves?",
+      "question": "During tank entry preparation gas readings fluctuate what is the best action",
       "options": [
-        "Remove oxygen",
-        "Heat cargo",
-        "Control tank pressure",
-        "Increase pressure"
+        "Ignore variation",
+        "Proceed with caution",
+        "Continue ventilation and recheck",
+        "Reduce ventilation"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -2020,14 +2272,16 @@
       "id": 127,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "What is a key reason to stop STS operations?",
+      "question": "Cargo hose shows signs of leakage what is the first action",
       "options": [
-        "Full tanks",
-        "Oil spill detected",
-        "Daylight",
-        "Calm weather"
+        "Continue monitoring",
+        "Inform later",
+        "Stop cargo transfer",
+        "Tighten bolts"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -2036,14 +2290,16 @@
       "id": 128,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "Why is intrinsically safe equipment used?",
+      "question": "Manifold pressure drops unexpectedly what is the best action",
       "options": [
-        "Improve signal",
-        "Prevent ignition",
-        "Reduce cost",
-        "Increase power"
+        "Increase pump rate",
+        "Continue discharge",
+        "Investigate immediately",
+        "Ignore if stable"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        2
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -2052,14 +2308,16 @@
       "id": 129,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "What is the function of the deck water seal?",
+      "question": "During loading tank atmosphere approaches flammable limits what is the best action",
       "options": [
-        "Remove soot",
-        "Prevent backflow",
-        "Cool gas",
-        "Increase pressure"
+        "Continue cautiously",
+        "Open vents",
+        "Increase loading rate",
+        "Stop operations and inert tank"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        3
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -2068,14 +2326,16 @@
       "id": 130,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "What is required before tank entry?",
+      "question": "Crew attempts to enter enclosed space without testing what is the most appropriate action",
       "options": [
-        "Close valves",
-        "Gas free and test atmosphere",
-        "Increase pressure",
-        "Add inert gas"
+        "Inform later",
+        "Allow entry",
+        "Provide PPE only",
+        "Stop and enforce procedures"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        3
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -2084,14 +2344,16 @@
       "id": 131,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "What is the first step before gas freeing a tank?",
+      "question": "IG deck seal malfunction suspected what is the best action",
       "options": [
-        "Heating",
-        "Loading",
-        "Purging",
-        "Ventilation"
+        "Investigate immediately",
+        "Stop monitoring",
+        "Ignore if pressure stable",
+        "Increase IG flow"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        0
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -2100,14 +2362,16 @@
       "id": 132,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "What happens if oxygen increases above safe limits in a tank?",
+      "question": "During discharge sudden pressure surge occurs what is the most appropriate action",
       "options": [
-        "Temperature falls",
-        "Explosion risk increases",
-        "Pressure drops",
-        "No effect"
+        "Investigate cause and stabilize system",
+        "Increase cargo rate",
+        "Open tank manually",
+        "Ignore if brief"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        0
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -2116,14 +2380,16 @@
       "id": 133,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "What is the main role of inert gas during discharge?",
+      "question": "Cargo transfer started without checklist completion what is the best action",
       "options": [
-        "Remove impurities",
-        "Replace volume",
-        "Increase oxygen",
-        "Cool cargo"
+        "Inform later",
+        "Stop and complete checklist",
+        "Ignore if safe",
+        "Continue operations"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -2132,14 +2398,16 @@
       "id": 134,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "What is a key hazard in pumproom spaces?",
+      "question": "Gas detection alarm activates in pumproom what is the first action",
       "options": [
-        "Cold temperatures",
-        "Gas accumulation",
-        "High oxygen",
-        "Low pressure"
+        "Increase ventilation only",
+        "Stop operations and investigate",
+        "Continue work",
+        "Ignore if transient"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -2148,14 +2416,16 @@
       "id": 135,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "What should be checked on manifolds before transfer?",
+      "question": "During tank cleaning oxygen levels rise unexpectedly what is the best action",
       "options": [
-        "Temperature",
-        "Support and connections",
-        "Paint condition",
-        "Colour"
+        "Ignore if brief",
+        "Increase ventilation",
+        "Continue cleaning",
+        "Stop and restore inert condition"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        3
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -2164,14 +2434,16 @@
       "id": 136,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "Why must accommodation be pressurised?",
+      "question": "Loading plan deviation observed what is the most appropriate action",
       "options": [
-        "Reduce humidity",
-        "Prevent gas ingress",
-        "Improve comfort",
-        "Increase oxygen"
+        "Correct and follow plan",
+        "Ignore if stable",
+        "Adjust ballast only",
+        "Allow minor deviation"
       ],
-      "correctIndex": 1,
+      "correctIndexes": [
+        0
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -2180,14 +2452,16 @@
       "id": 137,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "What is the function of IG blowers?",
+      "question": "Cargo vapour release observed on deck what is the best action",
       "options": [
-        "Heat gas",
-        "Store gas",
-        "Deliver inert gas",
-        "Filter gas"
+        "Increase ventilation only",
+        "Investigate and stop source",
+        "Continue operations",
+        "Ignore if minor"
       ],
-      "correctIndex": 2,
+      "correctIndexes": [
+        1
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
@@ -2196,14 +2470,210 @@
       "id": 138,
       "subject": "Marine Operations",
       "topic": "Oil Tankers",
-      "question": "What is the safe oxygen level before tank entry?",
+      "question": "Before sailing IG system not confirmed operational what is the best action",
       "options": [
-        "5%",
-        "15%",
-        "8%",
-        "20.90%"
+        "Verify and ensure IG operational",
+        "Sail anyway",
+        "Inform next port",
+        "Ignore temporarily"
       ],
-      "correctIndex": 3,
+      "correctIndexes": [
+        0
+      ],
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 139,
+      "subject": "Marine Operations",
+      "topic": "ISM Code",
+      "question": "Which are required under SMS communication arrangements?",
+      "options": [
+        "Defined authority levels",
+        "Informal communication only",
+        "Clear reporting lines",
+        "Communication between ship and shore"
+      ],
+      "correctIndexes": [
+        0,
+        2,
+        3
+      ],
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 140,
+      "subject": "Marine Operations",
+      "topic": "ISM Code",
+      "question": "Which contribute to emergency preparedness under the ISM Code?",
+      "options": [
+        "Regular drills",
+        "Formal emergency plans",
+        "Reliance on individual experience",
+        "Training for emergencies"
+      ],
+      "correctIndexes": [
+        0,
+        1,
+        3
+      ],
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 141,
+      "subject": "Marine Operations",
+      "topic": "ISM Code",
+      "question": "Which are objectives of the ISM Code?",
+      "options": [
+        "Safety at sea",
+        "Pollution prevention",
+        "Increased profitability",
+        "Protection of property"
+      ],
+      "correctIndexes": [
+        0,
+        1,
+        3
+      ],
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 142,
+      "subject": "Marine Operations",
+      "topic": "ISM Code",
+      "question": "Which are required for reporting under the SMS?",
+      "options": [
+        "Reporting accidents",
+        "Reporting hazardous situations",
+        "Reporting non-conformities",
+        "Reporting only after incidents"
+      ],
+      "correctIndexes": [
+        0,
+        1,
+        2
+      ],
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 143,
+      "subject": "Marine Operations",
+      "topic": "ISM Code",
+      "question": "Which must be included in the safety and environmental protection policy?",
+      "options": [
+        "Commitment to safety at sea",
+        "Prevention of injury or loss of life",
+        "Commercial targets",
+        "Environmental protection"
+      ],
+      "correctIndexes": [
+        0,
+        1,
+        3
+      ],
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 144,
+      "subject": "Marine Operations",
+      "topic": "ISM Code",
+      "question": "Which are required for SMS verification and improvement?",
+      "options": [
+        "Internal audits",
+        "Management reviews",
+        "External inspections only",
+        "Continuous improvement processes"
+      ],
+      "correctIndexes": [
+        0,
+        1,
+        3
+      ],
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 145,
+      "subject": "Marine Operations",
+      "topic": "ISM Code",
+      "question": "Failure to carry out a required SMS safety drill as scheduled is classified as:",
+      "options": [
+        "Observation",
+        "Non-conformity",
+        "Major non-conformity",
+        "Compliance"
+      ],
+      "correctIndexes": [
+        1
+      ],
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 146,
+      "subject": "Marine Operations",
+      "topic": "ISM Code",
+      "question": "A situation posing immediate risk to safety or environment is:",
+      "options": [
+        "Observation",
+        "Non-conformity",
+        "Major non-conformity",
+        "Suggestion"
+      ],
+      "correctIndexes": [
+        2
+      ],
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 147,
+      "subject": "Marine Operations",
+      "topic": "ISM Code",
+      "question": "A minor issue that may develop into a non-conformity is:",
+      "options": [
+        "Observation",
+        "Non-conformity",
+        "Major non-conformity",
+        "Compliance"
+      ],
+      "correctIndexes": [
+        0
+      ],
+      "difficulty": "medium",
+      "tierLabel": "Tier 2",
+      "explanation": "No explanation yet."
+    },
+    {
+      "id": 148,
+      "subject": "Marine Operations",
+      "topic": "ISM Code",
+      "question": "SMS procedures must ensure:",
+      "options": [
+        "Safe ship operation",
+        "Compliance with regulations",
+        "Increased profitability",
+        "Environmental protection"
+      ],
+      "correctIndexes": [
+        0,
+        1,
+        3
+      ],
       "difficulty": "medium",
       "tierLabel": "Tier 2",
       "explanation": "No explanation yet."
