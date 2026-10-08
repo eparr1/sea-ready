@@ -1,70 +1,128 @@
-'use client'
+"use client"
 
-import { useEffect, useState } from 'react'
-import { useRouter } from 'next/navigation'
-import { getProgress, getProgressBySubject, ProgressRecord } from '@/lib/progress'
+import Link from "next/link"
+import { useEffect, useState } from "react"
+import { CaretRight, ChartBar } from "@phosphor-icons/react"
+import { Button } from "@/components/ui/button"
+import {
+  getProgress,
+  getProgressBySubject,
+  ProgressRecord,
+} from "@/lib/progress"
 
 export function ProgressView() {
-  const router = useRouter()
-  const [records, setRecords] = useState<ProgressRecord[]>([])
+  const [records, setRecords] = useState<ProgressRecord[] | null>(null)
 
   useEffect(() => {
     setRecords(getProgress())
   }, [])
 
-  const bySubject = getProgressBySubject(records)
-
-  if (bySubject.length === 0) {
+  if (records === null) {
     return (
-      <div className="flex flex-col gap-4">
-        <div className="rounded-xl border border-border bg-card px-5 py-5">
-          <p className="text-sm text-muted-foreground">No quizzes completed yet.</p>
-          <p className="text-xs text-muted-foreground mt-1">Complete a quiz to see your scores here.</p>
-        </div>
-        <button
-          onClick={() => router.push('/topics')}
-          className="w-full min-h-13 rounded-xl bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90 active:scale-[0.98]"
-        >
-          Choose a Topic
-        </button>
+      <div
+        className="flex flex-col gap-4"
+        aria-busy="true"
+        aria-label="Loading progress"
+      >
+        <div className="h-20 animate-pulse rounded-2xl bg-muted" />
+        <div className="h-16 animate-pulse rounded-2xl bg-muted" />
+        <div className="h-16 animate-pulse rounded-2xl bg-muted" />
       </div>
     )
   }
 
-  return (
-    <div className="flex flex-col gap-3">
-      {bySubject.map(({ subject, best, attempts, lastPlayed }) => (
-        <button
-          key={subject}
-          onClick={() => router.push(`/quiz?subject=${encodeURIComponent(subject)}`)}
-          className="w-full rounded-xl border border-border bg-card px-4 py-4 text-left transition-all duration-150 hover:border-primary/40 hover:bg-accent active:scale-[0.98]"
-        >
-          <div className="flex items-center justify-between mb-2.5">
-            <span className="font-semibold text-foreground text-sm">{subject}</span>
-            <span className="text-sm font-bold text-primary">{best}%</span>
-          </div>
-          <div className="h-1.5 w-full overflow-hidden rounded-full bg-muted">
-            <div
-              className="h-full rounded-full bg-primary transition-all duration-500"
-              style={{ width: `${best}%` }}
-            />
-          </div>
-          <p className="text-xs text-muted-foreground mt-2">
-            {attempts} attempt{attempts !== 1 ? 's' : ''} · Last {new Date(lastPlayed).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
-          </p>
-        </button>
-      ))}
+  const bySubject = getProgressBySubject(records).sort((a, b) =>
+    b.lastPlayed.localeCompare(a.lastPlayed)
+  )
 
-      <p className="text-xs text-muted-foreground text-center pt-1">
+  if (bySubject.length === 0) {
+    return (
+      <div className="flex flex-1 flex-col items-center justify-center gap-5 pb-16 text-center">
+        <div className="flex size-16 items-center justify-center rounded-2xl bg-muted">
+          <ChartBar
+            className="size-7 text-muted-foreground"
+            aria-hidden="true"
+          />
+        </div>
+        <div>
+          <p className="text-lg font-semibold">No scores yet</p>
+          <p className="mx-auto mt-1 max-w-[30ch] text-sm text-muted-foreground">
+            Finish a quiz and your best result for each topic shows up here.
+          </p>
+        </div>
+        <Button asChild size="lg" className="w-full">
+          <Link href="/topics">Choose a topic</Link>
+        </Button>
+      </div>
+    )
+  }
+
+  const avg = Math.round(
+    records.reduce((a, r) => a + (r.score / r.total) * 100, 0) / records.length
+  )
+
+  return (
+    <div className="flex flex-col">
+      <div className="grid grid-cols-2 divide-x divide-border pb-6">
+        <div className="pr-5">
+          <p className="font-display text-4xl font-semibold tracking-tight tabular-nums">
+            {records.length}
+          </p>
+          <p className="mt-1 text-sm text-muted-foreground">
+            {records.length === 1 ? "quiz" : "quizzes"} completed
+          </p>
+        </div>
+        <div className="pl-5">
+          <p className="font-display text-4xl font-semibold tracking-tight tabular-nums">
+            {avg}
+            <span className="text-xl text-muted-foreground">%</span>
+          </p>
+          <p className="mt-1 text-sm text-muted-foreground">average score</p>
+        </div>
+      </div>
+
+      <ul className="border-t border-border">
+        {bySubject.map(({ subject, best, attempts, lastPlayed, href }) => (
+          <li key={subject}>
+            <Link
+              href={href ?? "/topics"}
+              className="-mx-2 block border-b border-border px-2 py-4 transition-colors active:bg-muted/70"
+            >
+              <div className="flex items-center gap-3">
+                <p className="min-w-0 flex-1 leading-snug font-semibold break-words">
+                  {subject}
+                </p>
+                <span className="font-display text-2xl font-semibold tabular-nums">
+                  {best}
+                  <span className="text-sm text-muted-foreground">%</span>
+                </span>
+                <CaretRight
+                  className="size-5 shrink-0 text-muted-foreground"
+                  weight="bold"
+                />
+              </div>
+              <div className="mt-3 h-1.5 w-full overflow-hidden rounded-full bg-muted">
+                <div
+                  className="h-full origin-left rounded-full bg-primary transition-transform duration-700 ease-out"
+                  style={{ transform: `scaleX(${best / 100})`, width: "100%" }}
+                />
+              </div>
+              <p className="mt-2 text-xs text-muted-foreground tabular-nums">
+                Best of {attempts} {attempts === 1 ? "attempt" : "attempts"} ·
+                Last played{" "}
+                {new Date(lastPlayed).toLocaleDateString("en-GB", {
+                  day: "numeric",
+                  month: "short",
+                })}
+              </p>
+            </Link>
+          </li>
+        ))}
+      </ul>
+
+      <p className="pt-5 text-center text-xs text-muted-foreground">
         Stored on this device only.
       </p>
-
-      <button
-        onClick={() => router.push('/topics')}
-        className="w-full min-h-13 rounded-xl border border-border bg-card px-4 py-3 text-sm font-medium text-foreground hover:bg-accent transition-colors active:scale-[0.98]"
-      >
-        Back to Topics
-      </button>
     </div>
   )
 }

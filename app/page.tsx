@@ -1,73 +1,61 @@
-import Link from 'next/link'
-import { getQuestions, getSubjects } from '@/lib/questions'
-import { ProgressWidget } from '@/components/home/ProgressWidget'
-import { Greeting } from '@/components/home/Greeting'
-import { ArrowRight, ChartNoAxesColumn } from 'lucide-react'
+import Link from "next/link"
+import { ArrowRight } from "@phosphor-icons/react/dist/ssr"
+import { getQuestions, getSubjects } from "@/lib/questions"
+import { ProgressWidget } from "@/components/home/ProgressWidget"
+import { Greeting } from "@/components/home/Greeting"
+import { Logo } from "@/components/brand/Logo"
+import { TopicGrid } from "@/components/quiz/TopicGrid"
 
 export default function HomePage() {
   const questions = getQuestions()
   const subjects = getSubjects(questions)
 
   return (
-    <div className="mx-auto max-w-lg min-h-svh flex flex-col">
-
-      {/* App header */}
-      <header className="flex items-center justify-between px-5 pt-12 pb-4">
-        <div>
-          <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-0.5">MasterMarinerPro</p>
-          <Greeting />
-        </div>
-        <Link
-          href="/progress"
-          className="flex h-9 w-9 items-center justify-center rounded-full border border-border bg-card transition-colors hover:bg-accent"
-          aria-label="View progress"
-        >
-          <ChartNoAxesColumn className="h-4 w-4 text-primary" strokeWidth={1.75} />
-        </Link>
+    <main className="screen">
+      <header className="flex h-11 items-center">
+        <Logo />
       </header>
 
-      <div className="flex flex-col gap-6 px-5 pb-12 flex-1">
+      <section className="mt-4 [@media(min-height:700px)]:mt-7">
+        <Greeting />
+        <p className="mt-2 text-base text-muted-foreground [@media(max-height:700px)]:hidden">
+          Ready for a quick round?
+        </p>
+      </section>
 
-        {/* Subjects */}
-        <div>
-          <p className="text-sm font-semibold text-primary mb-3">Subjects</p>
-          <div className="grid grid-cols-2 gap-3">
-            {subjects.map((subject) => (
-              <Link
-                key={subject.name}
-                href={`/subjects/${encodeURIComponent(subject.name)}`}
-                className="group flex flex-col gap-3 rounded-xl border border-border bg-card px-4 py-4 transition-all duration-150 hover:border-primary/40 hover:bg-accent active:scale-[0.98]"
-              >
-                <p className="text-sm font-semibold text-foreground leading-tight line-clamp-2">{subject.name}</p>
-                <p className="text-xs text-muted-foreground">{subject.count} questions</p>
-              </Link>
-            ))}
-          </div>
+      <Link
+        href="/quiz?subject=__random__"
+        className="group mt-5 flex flex-col gap-4 rounded-3xl bg-ink p-5 text-ink-foreground transition-transform duration-200 active:scale-[0.985] sm:flex-row sm:items-center sm:justify-between sm:gap-6 [@media(min-height:700px)]:mt-6"
+      >
+        <div className="min-w-0">
+          <p className="text-[0.9375rem] font-medium text-ink-foreground/70">
+            Quick mix
+          </p>
+          <h2 className="mt-1 font-display text-[clamp(1.375rem,6vw,1.75rem)] leading-[1.1] font-semibold tracking-tight">
+            Ten questions from every topic
+          </h2>
+          <p className="mt-2 max-w-[44ch] text-[0.9375rem] leading-snug text-ink-foreground/70">
+            A random warm-up across all subjects. Each answer is explained, so
+            you learn as you go. Takes about five minutes.
+          </p>
+          <p className="mt-2 text-sm text-ink-foreground/60 tabular-nums">
+            {questions.length} questions in the bank
+          </p>
         </div>
+        <span className="flex h-12 shrink-0 items-center justify-center gap-2 rounded-full bg-primary pr-5 pl-6 text-lg font-semibold text-primary-foreground transition-transform duration-200 group-hover:brightness-110 group-active:translate-x-0.5">
+          Start
+          <ArrowRight className="size-6" weight="bold" />
+        </span>
+      </Link>
 
-        {/* Random Mix */}
-        <Link
-          href="/quiz?subject=__random__"
-          className="group flex items-center justify-between rounded-2xl bg-primary px-6 py-5 transition-all duration-200 active:scale-[0.98]"
-        >
-          <div>
-            <p className="font-semibold text-primary-foreground text-lg">Random Mix</p>
-            <p className="mt-0.5 text-sm text-primary-foreground/70">
-              {questions.length} questions · all subjects
-            </p>
-          </div>
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20 transition-transform duration-200 group-hover:translate-x-0.5">
-            <ArrowRight className="h-5 w-5 text-white" strokeWidth={2} />
-          </div>
-        </Link>
+      <ProgressWidget />
 
-        {/* Progress */}
-        <div>
-          <p className="text-sm font-semibold text-primary mb-3">Your progress</p>
-          <ProgressWidget />
-        </div>
-
-      </div>
-    </div>
+      <section className="mt-6 [@media(min-height:700px)]:mt-8">
+        <h2 className="mb-1 text-[0.9375rem] font-medium text-muted-foreground">
+          Subjects
+        </h2>
+        <TopicGrid subjects={subjects} showMix={false} />
+      </section>
+    </main>
   )
 }

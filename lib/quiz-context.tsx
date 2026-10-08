@@ -4,7 +4,7 @@ import { createContext, useContext, useState } from 'react'
 import { Question } from '@/lib/questions'
 
 type Answer = {
-  questionId: number
+  questionId: string | number
   selectedIndexes: number[]
   correctIndexes: number[]
 }

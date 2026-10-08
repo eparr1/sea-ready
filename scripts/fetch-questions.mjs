@@ -1,6 +1,9 @@
 /**
- * Fetches questions from Google Sheets CSV and writes public/questions.json.
+ * Fetches published questions from Supabase and writes public/questions.json.
  * Run automatically before build and dev via package.json scripts.
+ *
+ * Mapping: DB `topic` -> app `subject` (the cards on the Topics screen),
+ *          DB `subtopic` -> app `topic` (the list inside a subject).
  */
 
 import { readFileSync, writeFileSync, existsSync } from 'fs'
@@ -19,33 +22,43 @@ if (existsSync(envPath)) {
   }
 }
 
-const url = process.env.GOOGLE_SHEET_CSV_URL
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY
+const outputPath = join(process.cwd(), 'public', 'questions.json')
 
-if (!url) {
-  console.warn('⚠️  GOOGLE_SHEET_CSV_URL not set – skipping question fetch')
+if (!supabaseUrl || !supabaseKey) {
+  console.warn('⚠️  Supabase env vars not set – skipping question fetch')
   process.exit(0)
 }
 
-const answerMap = { A: 0, B: 1, C: 2, D: 3 }
+const answerMap = { a: 0, b: 1, c: 2, d: 3 }
+const PAGE_SIZE = 1000
 
-function normalizeDifficulty(value) {
-  const v = value?.trim().toLowerCase()
-  if (v === 'easy') return { difficulty: 'easy', tierLabel: 'Tier 1' }
-  if (v === 'hard') return { difficulty: 'hard', tierLabel: 'Tier 3' }
-  return { difficulty: 'medium', tierLabel: 'Tier 2' }
-}
+console.log('Fetching questions from Supabase…')
 
-console.log('Fetching questions from Google Sheets…')
-
-let csvText
+// RLS only returns status = 'published' rows to the anon/publishable key.
+// Page through results because PostgREST caps responses at 1000 rows.
+const rows = []
 try {
-  const response = await fetch(url)
-  if (!response.ok) throw new Error(`HTTP ${response.status}`)
-  csvText = await response.text()
+  for (let from = 0; ; from += PAGE_SIZE) {
+    const response = await fetch(
+      `${supabaseUrl}/rest/v1/questions?select=*&status=eq.published&order=id`,
+      {
+        headers: {
+          apikey: supabaseKey,
+          Authorization: `Bearer ${supabaseKey}`,
+          Range: `${from}-${from + PAGE_SIZE - 1}`,
+        },
+      }
+    )
+    if (!response.ok) throw new Error(`HTTP ${response.status}`)
+    const page = await response.json()
+    rows.push(...page)
+    if (page.length < PAGE_SIZE) break
+  }
 } catch (err) {
   // If fetch fails (e.g. no internet), keep the existing file rather than failing the build
-  const existing = join(process.cwd(), 'public', 'questions.json')
-  if (existsSync(existing)) {
+  if (existsSync(outputPath)) {
     console.warn(`⚠️  Could not fetch questions (${err.message}) – using existing questions.json`)
     process.exit(0)
   }
@@ -53,73 +66,44 @@ try {
   process.exit(1)
 }
 
-// Minimal CSV parser that matches the column headers in lib/questions.ts
-const lines = csvText.split('\n')
-const rawHeaders = lines[0].split(',').map(h => h.trim().replace(/^"|"$/g, ''))
-
-function parseCSVLine(line) {
-  const values = []
-  let current = ''
-  let inQuotes = false
-  for (let i = 0; i < line.length; i++) {
-    const ch = line[i]
-    if (ch === '"') {
-      inQuotes = !inQuotes
-    } else if (ch === ',' && !inQuotes) {
-      values.push(current.trim())
-      current = ''
-    } else {
-      current += ch
-    }
-  }
-  values.push(current.trim())
-  return values
-}
-
 const questions = []
 
-for (let i = 1; i < lines.length; i++) {
-  const line = lines[i].trim()
-  if (!line) continue
-
-  const values = parseCSVLine(line)
-  const row = {}
-  rawHeaders.forEach((h, idx) => { row[h] = values[idx] ?? '' })
-
-  if (!row.questionText || !row.correct || !row.subject) {
-    console.warn(`  Skipping row ${row.questionNumber || i}: missing required fields`)
+for (const row of rows) {
+  const isImage = row.type === 'image_mcq'
+  if (isImage && !row.image_file) {
+    console.warn(`  Skipping ${row.id}: image question has no image_file`)
     continue
   }
-
-  const correctLetters = row.correct.trim().toUpperCase().split(',').map(l => l.trim()).filter(Boolean)
-  const correctIndexes = correctLetters.map(l => answerMap[l]).filter(i => i !== undefined)
-  if (correctIndexes.length === 0) {
-    console.warn(`  Skipping row ${row.questionNumber || i}: invalid correct answer "${row.correct}"`)
-    continue
+  // Images live in public/question-images/<image_file>
+  if (isImage && !existsSync(join(process.cwd(), 'public', 'question-images', row.image_file))) {
+    console.warn(`  Warning: ${row.id} image "${row.image_file}" not found in public/question-images/`)
   }
 
-  const { difficulty, tierLabel } = normalizeDifficulty(row.difficulty)
+  const options = [row.option_a, row.option_b, row.option_c, row.option_d]
+    .map(o => o?.trim() ?? '')
+    .filter(Boolean)
+  const correctIndex = answerMap[row.correct_option]
+
+  if (correctIndex === undefined || correctIndex >= options.length) {
+    console.warn(`  Skipping ${row.id}: correct option "${row.correct_option}" has no matching answer`)
+    continue
+  }
 
   questions.push({
-    id: parseInt(row.questionNumber) || i,
-    subject: row.subject.trim(),
-    topic: row.topic?.trim() || '',
-    question: row.questionText.trim(),
-    options: [
-      row.optionA?.trim() || '',
-      row.optionB?.trim() || '',
-      row.optionC?.trim() || '',
-      row.optionD?.trim() || '',
-    ],
-    correctIndexes,
-    difficulty,
-    tierLabel,
+    id: row.id,
+    subject: row.topic.trim(),
+    topic: row.subtopic?.trim() || '',
+    question: row.question.trim(),
+    options,
+    correctIndexes: [correctIndex],
+    difficulty: 'medium',
+    tierLabel: 'Tier 2',
     explanation: row.explanation?.trim() || 'No explanation yet.',
+    ...(isImage && { image: `/question-images/${encodeURIComponent(row.image_file)}` }),
   })
 }
 
-const outputPath = join(process.cwd(), 'public', 'questions.json')
 writeFileSync(outputPath, JSON.stringify({ questions }, null, 2))
 
 const subjects = [...new Set(questions.map(q => q.subject))]
-console.log(`✓ Wrote ${questions.length} questions across ${subjects.length} topics to public/questions.json`)
+console.log(`✓ Wrote ${questions.length} questions across ${subjects.length} subjects to public/questions.json`)

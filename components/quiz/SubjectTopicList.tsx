@@ -1,51 +1,81 @@
-'use client'
+"use client"
 
-import { useRouter } from 'next/navigation'
-import { ArrowRight, Shuffle } from 'lucide-react'
+import Link from "next/link"
+import { useEffect, useState } from "react"
+import { ArrowRight, CaretRight } from "@phosphor-icons/react"
+import { getProgress, getProgressBySubject } from "@/lib/progress"
 
 type Topic = { name: string; count: number }
 
-export function SubjectTopicList({ subject, topics }: { subject: string; topics: Topic[] }) {
-  const router = useRouter()
+export function SubjectTopicList({
+  subject,
+  topics,
+}: {
+  subject: string
+  topics: Topic[]
+}) {
+  const [best, setBest] = useState<Record<string, number>>({})
 
-  function handleTopicSelect(topicName: string) {
-    router.push(`/quiz?subject=${encodeURIComponent(subject)}&topic=${encodeURIComponent(topicName)}`)
-  }
+  useEffect(() => {
+    const map: Record<string, number> = {}
+    for (const p of getProgressBySubject(getProgress())) map[p.subject] = p.best
+    setBest(map)
+  }, [])
 
-  function handleTopicMix() {
-    router.push(`/quiz?subject=${encodeURIComponent(subject)}&topic=__mix__`)
-  }
+  const base = `/quiz?subject=${encodeURIComponent(subject)}`
 
   return (
-    <div className="flex flex-col gap-2.5">
-      {topics.map((topic) => (
-        <button
-          key={topic.name}
-          onClick={() => handleTopicSelect(topic.name)}
-          className="group w-full rounded-xl border border-border bg-card px-4 py-4 text-left transition-all duration-150 hover:border-primary/40 hover:bg-accent active:scale-[0.99]"
-        >
-          <div className="flex items-center justify-between">
-            <div>
-              <span className="font-semibold text-foreground">{topic.name}</span>
-              <span className="ml-2 text-xs text-muted-foreground">{topic.count} questions</span>
-            </div>
-            <ArrowRight className="h-4 w-4 text-primary opacity-0 group-hover:opacity-100 transition-opacity" strokeWidth={2} />
-          </div>
-        </button>
-      ))}
-
-      <button
-        onClick={handleTopicMix}
-        className="w-full rounded-xl bg-primary px-4 py-4 text-left transition-all duration-150 active:scale-[0.99]"
+    <div className="flex flex-col">
+      <Link
+        href={`${base}&topic=__mix__`}
+        className="relative mb-6 flex items-center gap-4 overflow-hidden rounded-2xl bg-ink px-5 py-4 text-ink-foreground transition-transform duration-200 active:scale-[0.985]"
       >
-        <div className="flex items-center justify-between">
-          <div>
-            <span className="font-semibold text-primary-foreground">Topic Mix</span>
-            <span className="ml-2 text-xs text-primary-foreground/70">up to 20 questions</span>
-          </div>
-          <Shuffle className="h-4 w-4 text-primary-foreground/70" strokeWidth={2} />
+        <div className="min-w-0 flex-1">
+          <p className="font-display text-lg font-semibold tracking-tight">
+            Topic mix
+          </p>
+          <p className="text-sm text-ink-foreground/70">
+            Up to 20 questions across every topic
+          </p>
         </div>
-      </button>
+        <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground">
+          <ArrowRight className="size-5" weight="bold" />
+        </span>
+      </Link>
+
+      <h2 className="mb-1 text-sm font-medium text-muted-foreground">Topics</h2>
+      <ul>
+        {topics.map((topic) => {
+          const score = best[topic.name]
+          return (
+            <li key={topic.name}>
+              <Link
+                href={`${base}&topic=${encodeURIComponent(topic.name)}`}
+                className="-mx-2 flex items-center gap-4 border-b border-border px-2 py-4 transition-colors active:bg-muted/70"
+              >
+                <div className="min-w-0 flex-1">
+                  <p className="leading-snug font-semibold break-words">
+                    {topic.name}
+                  </p>
+                  <p className="mt-0.5 text-sm text-muted-foreground tabular-nums">
+                    {topic.count} questions
+                  </p>
+                </div>
+                {score !== undefined && (
+                  <span className="font-display text-lg font-semibold tabular-nums">
+                    {score}
+                    <span className="text-sm text-muted-foreground">%</span>
+                  </span>
+                )}
+                <CaretRight
+                  className="size-5 shrink-0 text-muted-foreground"
+                  weight="bold"
+                />
+              </Link>
+            </li>
+          )
+        })}
+      </ul>
     </div>
   )
 }

@@ -1,11 +1,12 @@
-'use client'
+"use client"
 
-import { Suspense, useEffect, useState } from 'react'
-import { useSearchParams, useRouter } from 'next/navigation'
-import { QuizProvider } from '@/lib/quiz-context'
-import { QuizSession } from '@/components/quiz/QuizSession'
-import { Question } from '@/lib/questions'
-import { ChevronLeft, WifiOff } from 'lucide-react'
+import { Suspense, useEffect, useState } from "react"
+import { useSearchParams, useRouter } from "next/navigation"
+import { QuizProvider } from "@/lib/quiz-context"
+import { QuizSession } from "@/components/quiz/QuizSession"
+import { Question } from "@/lib/questions"
+import { Button } from "@/components/ui/button"
+import { WifiSlash, X } from "@phosphor-icons/react"
 
 function shuffleArray<T>(arr: T[]): T[] {
   const copy = [...arr]
@@ -16,11 +17,30 @@ function shuffleArray<T>(arr: T[]): T[] {
   return copy
 }
 
+function QuizSkeleton() {
+  return (
+    <div
+      className="mt-2 flex flex-col gap-3"
+      aria-busy="true"
+      aria-label="Loading questions"
+    >
+      <div className="h-2 animate-pulse rounded-full bg-muted" />
+      <div className="mt-6 h-6 w-4/5 animate-pulse rounded-lg bg-muted" />
+      <div className="h-6 w-3/5 animate-pulse rounded-lg bg-muted" />
+      <div className="mt-4 flex flex-col gap-3">
+        {[0, 1, 2, 3].map((i) => (
+          <div key={i} className="h-16 animate-pulse rounded-2xl bg-muted" />
+        ))}
+      </div>
+    </div>
+  )
+}
+
 function QuizPageInner() {
   const searchParams = useSearchParams()
   const router = useRouter()
-  const subject = searchParams.get('subject') || '__random__'
-  const topic = searchParams.get('topic') || ''
+  const subject = searchParams.get("subject") || "__random__"
+  const topic = searchParams.get("topic") || ""
 
   const [questions, setQuestions] = useState<Question[]>([])
   const [loading, setLoading] = useState(true)
@@ -34,41 +54,47 @@ function QuizPageInner() {
 
     // Fetch the static JSON directly — it's precached by the service worker,
     // so filtering works correctly offline for any topic.
-    fetch('/questions.json', { signal: controller.signal })
-      .then(r => {
+    fetch("/questions.json", { signal: controller.signal })
+      .then((r) => {
         if (!r.ok) throw new Error(`HTTP ${r.status}`)
         return r.json()
       })
       .then((data: { questions: (Question & { correctIndex?: number })[] }) => {
         // Normalize legacy correctIndex → correctIndexes
-        const allQuestions: Question[] = data.questions.map(q => ({
+        const allQuestions: Question[] = data.questions.map((q) => ({
           ...q,
-          correctIndexes: q.correctIndexes ?? (q.correctIndex !== undefined ? [q.correctIndex] : [0]),
+          correctIndexes:
+            q.correctIndexes ??
+            (q.correctIndex !== undefined ? [q.correctIndex] : [0]),
         }))
-        const isRandom = subject === '__random__'
-        const isMix = topic === '__mix__'
+        const isRandom = subject === "__random__"
+        const isMix = topic === "__mix__"
 
         let filtered: Question[]
         if (isRandom) {
           filtered = shuffleArray(allQuestions).slice(0, 10)
         } else if (isMix) {
-          filtered = shuffleArray(allQuestions.filter(q => q.subject === subject)).slice(0, 20)
+          filtered = shuffleArray(
+            allQuestions.filter((q) => q.subject === subject)
+          ).slice(0, 20)
         } else if (topic) {
-          filtered = allQuestions.filter(q => q.subject === subject && q.topic === topic)
+          filtered = allQuestions.filter(
+            (q) => q.subject === subject && q.topic === topic
+          )
         } else {
-          filtered = allQuestions.filter(q => q.subject === subject)
+          filtered = allQuestions.filter((q) => q.subject === subject)
         }
 
         if (filtered.length === 0) {
-          router.replace('/topics')
+          router.replace("/topics")
           return
         }
 
         setQuestions(filtered)
         setLoading(false)
       })
-      .catch(err => {
-        if (err.name === 'AbortError') return
+      .catch((err) => {
+        if (err.name === "AbortError") return
         setOffline(true)
         setLoading(false)
       })
@@ -77,56 +103,57 @@ function QuizPageInner() {
   }, [subject, topic])
 
   const displayName =
-    subject === '__random__'
-      ? 'Random Mix'
-      : topic === '__mix__'
-        ? `${subject} — Topic Mix`
+    subject === "__random__"
+      ? "Random Mix"
+      : topic === "__mix__"
+        ? `${subject} - Topic Mix`
         : topic || subject
 
   return (
-    <div className="mx-auto max-w-lg min-h-svh flex flex-col px-5 pt-12 pb-12">
-      <div className="flex items-center gap-3 mb-8">
+    <main className="screen screen-focus">
+      <div className="mb-4 flex items-center gap-1">
         <button
           onClick={() => router.back()}
-          className="flex h-8 w-8 items-center justify-center rounded-full border border-border bg-card transition-colors hover:bg-accent"
+          aria-label="Close quiz"
+          className="-ml-2 flex size-11 shrink-0 items-center justify-center rounded-full transition-colors active:bg-muted"
         >
-          <ChevronLeft className="h-4 w-4 text-primary" strokeWidth={2} />
+          <X className="size-6" weight="bold" />
         </button>
-        <h1 className="text-xl font-bold tracking-tight truncate">{displayName}</h1>
+        <p className="truncate text-sm font-medium text-muted-foreground">
+          {displayName}
+        </p>
       </div>
 
-      {loading && (
-        <div className="flex-1 flex items-center justify-center">
-          <p className="text-sm text-muted-foreground">Loading questions…</p>
-        </div>
-      )}
+      {loading && <QuizSkeleton />}
 
       {offline && (
-        <div className="flex-1 flex flex-col items-center justify-center gap-4 text-center px-4">
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-muted">
-            <WifiOff className="h-5 w-5 text-muted-foreground" strokeWidth={1.75} />
+        <div className="flex flex-1 flex-col items-center justify-center gap-5 px-4 pb-16 text-center">
+          <div className="flex size-16 items-center justify-center rounded-2xl bg-muted">
+            <WifiSlash className="size-7 text-muted-foreground" />
           </div>
           <div>
-            <p className="font-semibold text-foreground">You're offline</p>
-            <p className="mt-1 text-sm text-muted-foreground">
-              Visit the app once with wifi to cache the questions, then it works offline.
+            <p className="text-lg font-semibold">You&apos;re offline</p>
+            <p className="mx-auto mt-1 max-w-[32ch] text-sm text-muted-foreground">
+              Open the app once with a connection to save the questions, then it
+              works offline.
             </p>
           </div>
-          <button
-            onClick={() => router.push('/')}
-            className="mt-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90"
-          >
+          <Button size="lg" className="w-full" onClick={() => router.push("/")}>
             Back to home
-          </button>
+          </Button>
         </div>
       )}
 
       {!loading && !offline && (
         <QuizProvider>
-          <QuizSession questions={questions} subject={displayName} />
+          <QuizSession
+            questions={questions}
+            subject={displayName}
+            href={`/quiz?${searchParams.toString()}`}
+          />
         </QuizProvider>
       )}
-    </div>
+    </main>
   )
 }
 

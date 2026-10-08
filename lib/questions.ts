@@ -2,7 +2,7 @@ import { readFileSync } from 'fs'
 import { join } from 'path'
 
 export type Question = {
-  id: number
+  id: string | number
   subject: string
   topic: string
   question: string
@@ -11,6 +11,7 @@ export type Question = {
   difficulty: string
   tierLabel: string
   explanation: string
+  image?: string
 }
 
 export function getQuestions(): Question[] {

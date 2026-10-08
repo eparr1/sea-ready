@@ -5,21 +5,9 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-    --font-heading: var(--font-sans);
     --font-sans: var(--font-sans);
-    --color-sidebar-ring: var(--sidebar-ring);
-    --color-sidebar-border: var(--sidebar-border);
-    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-    --color-sidebar-accent: var(--sidebar-accent);
-    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-    --color-sidebar-primary: var(--sidebar-primary);
-    --color-sidebar-foreground: var(--sidebar-foreground);
-    --color-sidebar: var(--sidebar);
-    --color-chart-5: var(--chart-5);
-    --color-chart-4: var(--chart-4);
-    --color-chart-3: var(--chart-3);
-    --color-chart-2: var(--chart-2);
-    --color-chart-1: var(--chart-1);
+    --font-heading: var(--font-display);
+    --font-display: var(--font-display);
     --color-ring: var(--ring);
     --color-input: var(--input);
     --color-border: var(--border);
@@ -38,95 +26,172 @@
     --color-card: var(--card);
     --color-foreground: var(--foreground);
     --color-background: var(--background);
+    --color-ink: var(--ink);
+    --color-ink-foreground: var(--ink-foreground);
+    --color-brand: var(--brand);
+    --color-success: var(--success);
+    --color-success-soft: var(--success-soft);
+    --color-danger: var(--danger);
+    --color-danger-soft: var(--danger-soft);
     --radius-sm: calc(var(--radius) * 0.6);
     --radius-md: calc(var(--radius) * 0.8);
     --radius-lg: var(--radius);
-    --radius-xl: calc(var(--radius) * 1.4);
-    --radius-2xl: calc(var(--radius) * 1.8);
-    --radius-3xl: calc(var(--radius) * 2.2);
+    --radius-xl: calc(var(--radius) * 1.3);
+    --radius-2xl: calc(var(--radius) * 1.7);
+    --radius-3xl: calc(var(--radius) * 2.1);
     --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+/*
+ * Palette: cool navy-tinted neutrals in both modes, deep navy ink, one signal-orange accent.
+ */
 :root {
-    --font-sans: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-    --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-    --background: oklch(0.97 0.015 255);
-    --foreground: oklch(0.18 0.07 258);
-    --card: oklch(1 0 0);
-    --card-foreground: oklch(0.18 0.07 258);
-    --popover: oklch(1 0 0);
-    --popover-foreground: oklch(0.18 0.07 258);
-    --primary: oklch(41.729% 0.14143 257.212);
-    --primary-foreground: oklch(0.985 0 0);
-    --secondary: oklch(0.93 0.04 258);
-    --secondary-foreground: oklch(0.25 0.10 258);
-    --muted: oklch(0.93 0.03 258);
-    --muted-foreground: oklch(0.48 0.06 258);
-    --accent: oklch(0.91 0.05 258);
-    --accent-foreground: oklch(0.30 0.14 258);
-    --destructive: oklch(0.577 0.245 27.325);
-    --border: oklch(0.88 0.04 258);
-    --input: oklch(0.88 0.04 258);
-    --ring: oklch(0.52 0.20 258);
-    --chart-1: oklch(0.87 0 0);
-    --chart-2: oklch(0.556 0 0);
-    --chart-3: oklch(0.439 0 0);
-    --chart-4: oklch(0.371 0 0);
-    --chart-5: oklch(0.269 0 0);
-    --radius: 0.625rem;
-    --sidebar: oklch(0.985 0 0);
-    --sidebar-foreground: oklch(0.145 0 0);
-    --sidebar-primary: oklch(0.205 0 0);
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.97 0 0);
-    --sidebar-accent-foreground: oklch(0.205 0 0);
-    --sidebar-border: oklch(0.922 0 0);
-    --sidebar-ring: oklch(0.708 0 0);
+    --font-sans: var(--font-barlow), "SF Pro Text", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --font-display: var(--font-barlow-condensed), var(--font-barlow), system-ui, sans-serif;
+    --font-mono: var(--font-geist-mono), "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+
+    --background: oklch(0.975 0.006 250);
+    --foreground: oklch(0.21 0.045 255);
+    --card: oklch(0.995 0.002 250);
+    --card-foreground: oklch(0.21 0.045 255);
+    --popover: oklch(0.995 0.002 250);
+    --popover-foreground: oklch(0.21 0.045 255);
+
+    /* signal orange: fills and CTAs. --brand is the darker text-safe variant. */
+    --primary: oklch(0.72 0.17 52);
+    --primary-foreground: oklch(0.21 0.045 255);
+    --brand: oklch(0.52 0.16 45);
+
+    --secondary: oklch(0.945 0.01 250);
+    --secondary-foreground: oklch(0.21 0.045 255);
+    --muted: oklch(0.945 0.01 250);
+    --muted-foreground: oklch(0.5 0.035 255);
+    --accent: oklch(0.955 0.012 250);
+    --accent-foreground: oklch(0.21 0.045 255);
+    --border: oklch(0.9 0.012 250);
+    --input: oklch(0.9 0.012 250);
+    --ring: oklch(0.72 0.17 52);
+
+    /* navy ink: hero surfaces and the brand mark */
+    --ink: oklch(0.24 0.06 255);
+    --ink-foreground: oklch(0.97 0.01 85);
+
+    --success: oklch(0.48 0.12 150);
+    --success-soft: oklch(0.955 0.04 150);
+    --danger: oklch(0.52 0.19 27);
+    --danger-soft: oklch(0.955 0.03 25);
+    --destructive: oklch(0.52 0.19 27);
+
+    --radius: 0.875rem;
 }
 
 .dark {
-    --background: oklch(0.16 0.04 258);
-    --foreground: oklch(0.93 0.02 258);
-    --card: oklch(0.21 0.05 258);
-    --card-foreground: oklch(0.93 0.02 258);
-    --popover: oklch(0.21 0.05 258);
-    --popover-foreground: oklch(0.93 0.02 258);
-    --primary: oklch(0.65 0.18 258);
-    --primary-foreground: oklch(0.985 0 0);
-    --secondary: oklch(0.52 0.09 258);
-    --secondary-foreground: oklch(0.96 0.02 258);
-    --muted: oklch(0.48 0.08 258);
-    --muted-foreground: oklch(0.88 0.05 258);
-    --accent: oklch(0.55 0.11 258);
-    --accent-foreground: oklch(0.97 0.02 258);
-    --destructive: oklch(0.65 0.22 27);
-    --border: oklch(0.75 0.07 258);
-    --input: oklch(0.75 0.07 258);
-    --ring: oklch(0.65 0.18 258);
-    --chart-1: oklch(0.65 0.18 258);
-    --chart-2: oklch(0.55 0.14 258);
-    --chart-3: oklch(0.45 0.10 258);
-    --chart-4: oklch(0.35 0.08 258);
-    --chart-5: oklch(0.25 0.06 258);
-    --sidebar: oklch(0.21 0.05 258);
-    --sidebar-foreground: oklch(0.93 0.02 258);
-    --sidebar-primary: oklch(0.65 0.18 258);
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.55 0.11 258);
-    --sidebar-accent-foreground: oklch(0.97 0.02 258);
-    --sidebar-border: oklch(0.75 0.07 258);
-    --ring: oklch(0.65 0.18 258);
+    --background: oklch(0.17 0.03 255);
+    --foreground: oklch(0.95 0.01 85);
+    --card: oklch(0.21 0.035 255);
+    --card-foreground: oklch(0.95 0.01 85);
+    --popover: oklch(0.21 0.035 255);
+    --popover-foreground: oklch(0.95 0.01 85);
+
+    --primary: oklch(0.76 0.16 55);
+    --primary-foreground: oklch(0.2 0.04 255);
+    --brand: oklch(0.78 0.15 55);
+
+    --secondary: oklch(0.25 0.03 255);
+    --secondary-foreground: oklch(0.95 0.01 85);
+    --muted: oklch(0.25 0.03 255);
+    --muted-foreground: oklch(0.72 0.025 255);
+    --accent: oklch(0.27 0.035 255);
+    --accent-foreground: oklch(0.95 0.01 85);
+    --border: oklch(0.3 0.03 255);
+    --input: oklch(0.3 0.03 255);
+    --ring: oklch(0.76 0.16 55);
+
+    --ink: oklch(0.27 0.06 255);
+    --ink-foreground: oklch(0.97 0.01 85);
+
+    --success: oklch(0.8 0.14 150);
+    --success-soft: oklch(0.28 0.06 150);
+    --danger: oklch(0.78 0.14 25);
+    --danger-soft: oklch(0.29 0.07 25);
+    --destructive: oklch(0.72 0.17 25);
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
-    }
+  }
+  html {
+    @apply font-sans;
+    -webkit-text-size-adjust: 100%;
+    /* Every rem in the app scales with the screen: 16px on a 320px SE up to
+       18px on a Pro Max. Stays in rem so the user's own text-size setting still applies. */
+    font-size: clamp(1rem, 2.4vw + 0.5rem, 1.125rem);
+  }
   body {
     @apply bg-background text-foreground;
     transition: background-color 0.2s ease, color 0.2s ease;
-    }
-  html {
-    @apply font-sans;
-    }
+    /* app-like behaviour inside the store wrappers */
+    overscroll-behavior-y: none;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  button, a {
+    -webkit-touch-callout: none;
+  }
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* Page container: respects the notch and leaves room for the tab bar. */
+  .screen {
+    margin-inline: auto;
+    display: flex;
+    min-height: 100dvh;
+    max-width: 32rem;
+    flex-direction: column;
+    /* 16px on a 320px SE up to 24px on a Pro Max */
+    padding-inline: clamp(1rem, 5vw, 1.5rem);
+    padding-top: calc(env(safe-area-inset-top) + 1rem);
+    padding-bottom: calc(env(safe-area-inset-bottom) + 6.5rem);
+  }
+  /* Quiz and other focus screens: no tab bar. */
+  .screen-focus {
+    padding-bottom: calc(env(safe-area-inset-bottom) + 1rem);
+  }
+  /* Sticky action bar at the bottom of quiz and result screens. */
+  .action-bar {
+    position: sticky;
+    bottom: 0;
+    margin-inline: calc(clamp(1rem, 5vw, 1.5rem) * -1);
+    margin-top: auto;
+    padding: 1.25rem clamp(1rem, 5vw, 1.5rem) calc(env(safe-area-inset-bottom) + 0.75rem);
+    background: linear-gradient(to top, var(--background) 70%, transparent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Big score and stat numbers read like instrument readouts.
+   Unlayered so it beats the font-display utility. */
+.font-display.tabular-nums {
+  font-family: var(--font-mono);
+  letter-spacing: -0.02em;
 }
